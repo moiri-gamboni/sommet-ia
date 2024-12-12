@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import { SpeakersTabGroup } from './SpeakersTabGroup';
+import Container from './Container.astro';
+import { getDays } from '../utils/get-days';
+import SpeakerImage from './SpeakerImage.astro';
+
+const days = await getDays();
+---
+
+<section id="speakers" aria-labelledby="speakers-title" class="py-20 sm:py-32">
+  <Container>
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2
+        id="speakers-title"
+        class="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+      >
+        Speakers
+      </h2>
+      <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
+        Learn from the experts on the cutting-edge of deception at the most
+        sinister companies.
+      </p>
+    </div>
+    <SpeakersTabGroup days={days} client:load />
+  </Container>
+</section> 

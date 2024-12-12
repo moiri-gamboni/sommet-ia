@@ -1,0 +1,36 @@
+---
+import Container from './Container.astro';
+import { Image } from 'astro:assets';
+
+// Import logos
+import logoLaravel from '../assets/logos/laravel.svg';
+import logoMirage from '../assets/logos/mirage.svg';
+import logoStatamic from '../assets/logos/statamic.svg';
+import logoStaticKit from '../assets/logos/statickit.svg';
+import logoTransistor from '../assets/logos/transistor.svg';
+import logoTuple from '../assets/logos/tuple.svg';
+
+const sponsors = [
+  { name: 'Transistor', logo: logoTransistor },
+  { name: 'Tuple', logo: logoTuple },
+  { name: 'StaticKit', logo: logoStaticKit },
+  { name: 'Mirage', logo: logoMirage },
+  { name: 'Laravel', logo: logoLaravel },
+  { name: 'Statamic', logo: logoStatamic },
+];
+---
+
+<section id="sponsors" aria-label="Sponsors" class="py-20 sm:py-32">
+  <Container>
+    <h2 class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+      Current sponsorships for our workshops and speakers.
+    </h2>
+    <div class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+      {sponsors.map((sponsor) => (
+        <div class="flex items-center justify-center">
+          <Image src={sponsor.logo} alt={sponsor.name} />
+        </div>
+      ))}
+    </div>
+  </Container>
+</section> 

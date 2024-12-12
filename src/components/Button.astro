@@ -1,0 +1,25 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a' | 'button'> {
+  href?: string;
+  type?: 'button' | 'submit' | 'reset';
+  class?: string;
+} ;
+
+const { href, class: className, ...props } = Astro.props;
+
+const baseClasses = 'inline-flex justify-center rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white/70';
+---
+
+{
+  href ? (
+    <a {href} class:list={[baseClasses, className]} {...props}>
+      <slot />
+    </a>
+  ) : (
+    <button class:list={[baseClasses, className]} {...props}>
+      <slot />
+    </button>
+  )
+}
