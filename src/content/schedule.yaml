@@ -4,12 +4,12 @@
   start: "10h00"
   end: "11h30"
 
-- id: stands-1
-  type: Stands et concours
-  description: Visite des stands et vote pour le concours de projets
-  start: "11h30"
-  end: "12h00"
-  speaker: null
+# - id: stands-1
+#   type: Stands et concours
+#   description: Visite des stands et vote pour le concours de projets
+#   start: "11h30"
+#   end: "12h00"
+#   speaker: null
 
 - id: table-ronde-1
   type: Table ronde #1
@@ -30,12 +30,12 @@
   start: "14h00"
   end: "15h30"
 
-- id: stands-2
-  type: Stands et concours
-  description: Derniers votes et dépouillement du concours
-  start: "15h30"
-  end: "16h00"
-  speaker: null
+# - id: stands-2
+#   type: Stands et concours
+#   description: Derniers votes et dépouillement du concours
+#   start: "15h30"
+#   end: "16h00"
+#   speaker: null
 
 - id: presentations
   type: Session de présentations
