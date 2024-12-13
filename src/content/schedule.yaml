@@ -16,10 +16,6 @@
   description: Discussion thématique sur la gouvernance de l'IA
   start: "12h00"
   end: "13h00"
-  speaker:
-    name: Kimberly Parsons
-    role: VP of Design at Umbrella Corp
-    image: ./schedule/images/kimberly-parsons.jpg
 
 - id: dejeuner
   type: Pause déjeuner
@@ -33,10 +29,6 @@
   description: Discussion thématique et échanges avec la salle
   start: "14h00"
   end: "15h30"
-  speaker:
-    name: Heather Terry
-    role: Director of Product at Soylent Corp
-    image: ./schedule/images/heather-terry.jpg
 
 - id: stands-2
   type: Stands et concours
@@ -50,7 +42,3 @@
   description: Interventions courtes et présentation du projet lauréat
   start: "16h00"
   end: "17h00"
-  speaker:
-    name: Cathlene Burrage
-    role: Chief Strategy Officer at Weyland Corp
-    image: ./schedule/images/cathlene-burrage.jpg
