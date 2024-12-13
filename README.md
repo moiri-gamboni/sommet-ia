@@ -1,48 +1,58 @@
-# Astro Starter Kit: Basics
+# Forum des Solutions pour une IA Compatible avec l'Humanité
 
-```sh
-npm create astro@latest -- --template basics
-```
+Site web pour la conférence "Reprendre le Contrôle" organisée par Pause IA, présentant une journée de conférences et d'échanges sur la gouvernance de l'IA.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🌟 Fonctionnalités
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Programme détaillé de la journée
+- Présentation des intervenants
+- Système d'inscription aux notifications (à venir)
+- Design responsive et moderne
+- Optimisation des images
+- Transitions fluides entre les pages
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Structure du Projet
 
 ```text
 /
-├── public/
-│   └── favicon.svg
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── assets/            # Images et ressources statiques
+│   ├── components/        # Composants Astro réutilisables
+│   ├── content/          # Contenu structuré (YAML)
+│   │   ├── schedule/     # Programme de la journée
+│   │   └── speakers/     # Informations sur les intervenants
+│   ├── layouts/          # Layouts Astro
+│   └── pages/            # Pages du site
+└── public/               # Fichiers statiques
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Technologies Utilisées
 
-## 🧞 Commands
+- [Astro](https://astro.build/) - Framework web moderne
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitaire
+- YAML pour la gestion du contenu
+- Optimisation automatique des images via Astro
 
-All commands are run from the root of the project, from a terminal:
+## 🧞 Commandes
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Commande                 | Action                                           |
+| :----------------------- | :----------------------------------------------- |
+| `npm install`            | Installe les dépendances                        |
+| `npm run dev`            | Lance le serveur de dev sur `localhost:4321`    |
+| `npm run build`          | Compile le site pour la production              |
+| `npm run preview`        | Prévisualise la version de production          |
 
-## 👀 Want to learn more?
+## 📝 Mise à jour du Contenu
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Le contenu du site est géré via des fichiers YAML dans le dossier `src/content/`:
+
+- `schedule.yaml` - Programme de la journée
+- `speakers/*.yaml` - Profils des intervenants
+
+## 🎨 Design
+
+Le site utilise une palette de couleurs bleue cohérente et un design moderne avec:
+- Typographie optimisée (Inter & DM Sans)
+- Effets de flou et de transparence
+- Composants réactifs
+- Transitions fluides
