@@ -1,20 +1,21 @@
 ---
 import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+type Speaker = NonNullable<CollectionEntry<'schedule'>['data']['speaker']>;
 
 interface Props {
-  src: ImageMetadata;
-  alt: string;
+  speaker: Speaker;
 }
 
-const { src, alt } = Astro.props;
+const { speaker } = Astro.props;
 ---
 
-<div class="absolute inset-0 bg-indigo-50">
+<div class="group relative transform overflow-hidden rounded-2xl bg-slate-100" style="aspect-ratio: 1">
   <Image
     class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-    src={src}
-    alt={alt}
-    width={500}
-    height={500}
+    src={speaker.image}
+    alt={speaker.name}
+    format="webp"
   />
 </div>

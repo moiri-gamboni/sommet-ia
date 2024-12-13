@@ -1,29 +1,21 @@
-import { defineCollection, z, reference } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { defineCollection, z } from 'astro:content';
+import { file } from 'astro/loaders';
+import type { SchemaContext } from 'astro:content';
 
-const days = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content/days' }),
-  schema: z.object({
-    name: z.string(),
-    date: z.coerce.date(),
-    summary: z.string(),
-    timeSlots: z.array(z.object({
-      type: z.string().nullable(),
-      description: z.string().nullable(),
-      speaker: reference('speakers').nullable(),
-      start: z.string(),
-      end: z.string(),
-    })),
+const schedule = defineCollection({
+  loader: file('src/content/schedule.yaml'),
+  schema: ({ image }: SchemaContext) => z.object({
+    id: z.string(),
+    type: z.string(),
+    description: z.string(),
+    start: z.string(),
+    end: z.string(),
+    speaker: z.object({
+      name: z.string(),
+      role: z.string(),
+      image: image(),
+    }).nullable().optional(),
   }),
 });
 
-const speakers = defineCollection({
-  loader: glob({ pattern: '**/*.yaml', base: './src/content/speakers' }),
-  schema: ({ image }) => z.object({
-    name: z.string(),
-    role: z.string(),
-    image: image(),
-  }),
-});
-
-export const collections = { days, speakers }; 
+export const collections = { schedule }; 

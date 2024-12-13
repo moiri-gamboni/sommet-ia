@@ -1,11 +1,9 @@
 ---
-import { Image } from 'astro:assets';
-import { SpeakersTabGroup } from './SpeakersTabGroup';
 import Container from './Container.astro';
-import { getDays } from '../utils/get-days';
+import { getCollection } from 'astro:content';
 import SpeakerImage from './SpeakerImage.astro';
 
-const days = await getDays();
+const speakerSessions = await getCollection('schedule', ({ data }) => data.speaker != null)
 ---
 
 <section id="speakers" aria-labelledby="speakers-title" class="py-20 sm:py-32">
@@ -15,13 +13,24 @@ const days = await getDays();
         id="speakers-title"
         class="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
       >
-        Speakers
+        Intervenants
       </h2>
       <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
-        Learn from the experts on the cutting-edge of deception at the most
-        sinister companies.
+        Échangez avec des experts et acteurs engagés à l'avant-garde de la gouvernance de l'IA.
       </p>
     </div>
-    <SpeakersTabGroup days={days} client:load />
+    <div class="mt-14 grid max-w-2xl grid-cols-1 gap-8 sm:mt-16 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3">
+      {speakerSessions.map((session) => (
+        <div>
+          <SpeakerImage speaker={session.data.speaker!} />
+          <h3 class="mt-6 text-lg font-semibold tracking-tight text-slate-900">
+            {session.data.speaker!.name}
+          </h3>
+          <p class="mt-1 text-base tracking-tight text-slate-500">
+            {session.data.speaker!.role}
+          </p>
+        </div>
+      ))}
+    </div>
   </Container>
 </section> 

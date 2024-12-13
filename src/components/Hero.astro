@@ -1,14 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import BackgroundImage from './BackgroundImage.astro';
 import Button from './Button.astro';
 import Container from './Container.astro';
-
-const stats = [
-  ['Speakers', '18'],
-  ['People Attending', '2,091'],
-  ['Venue', 'Staples Center'],
-  ['Location', 'Los Angeles'],
-];
+import backgroundNewsletter from '../assets/background-newsletter.jpg';
 ---
 
 <div class="relative py-20 sm:pb-24 sm:pt-36">
@@ -16,35 +11,77 @@ const stats = [
   <Container class="relative">
     <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
       <h1 class="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-        <span class="sr-only">DeceptiConf - </span>A design conference
-        for the dark side.
+        Reprendre le Contrôle
       </h1>
+      <p class="mt-4 font-display text-4xl font-medium tracking-tight text-blue-800">
+        Forum des Solutions pour une IA Compatible avec l'Humanité
+      </p>
       <div class="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
         <p>
-          The next generation of web users are tech-savvy and suspicious.
-          They know how to use dev tools, they can detect a phishing scam
-          from a mile away, and they certainly aren't accepting any checks
-          from Western Union.
+          Le développement de l'intelligence artificielle transforme rapidement notre monde et soulève des questions 
+          fondamentales pour notre avenir collectif. Les progrès accélérés en IA généraliste, portés par une intense 
+          compétition internationale, nous placent à un moment charnière où des décisions importantes doivent être prises.
         </p>
         <p>
-          At DeceptiConf you'll learn about the latest dark patterns being
-          developed to trick even the smartest visitors, and you'll learn
-          how to deploy them without ever being detected.
+          Cette course technologique, menée principalement par des acteurs privés, soulève des enjeux majeurs de 
+          gouvernance et de sécurité. Il est essentiel d'établir un cadre international permettant un développement 
+          responsable de l'IA, garantissant que ces technologies restent bénéfiques pour l'humanité. Le Sommet pour 
+          l'Action sur l'IA des 10 et 11 février 2025 représente une opportunité historique pour poser les bases 
+          d'une telle gouvernance mondiale.
+        </p>
+        <p>
+          C'est dans cette perspective que Pause IA organise une journée exceptionnelle de conférences et d'échanges. 
+          Notre ambition : créer un espace de dialogue constructif entre experts, décideurs, chercheurs et citoyens 
+          engagés pour élaborer des propositions concrètes de gouvernance de l'IA.
         </p>
       </div>
-      <Button href="#" class="mt-10 w-full sm:hidden">
-        Get your tickets
-      </Button>
       <dl class="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
-        {stats.map(([name, value]) => (
-          <div>
-            <dt class="font-mono text-sm text-blue-600">{name}</dt>
-            <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
-              {value}
-            </dd>
-          </div>
-        ))}
+        <div>
+          <dt class="font-mono text-sm text-blue-600">Date</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+            9 février 2025
+          </dd>
+        </div>
+        <div>
+          <dt class="font-mono text-sm text-blue-600">Lieu</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+            <a 
+              href="https://maps.app.goo.gl/P8dyGhTXAQa649Jr7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-3 hover:text-blue-600 transition-colors"
+            >
+              Learning Planet Institute
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-blue-900/50 group-hover:text-blue-600 transition-colors">
+                <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </dd>
+        </div>
+        <div>
+          <dt class="font-mono text-sm text-blue-600">Format</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+            Conférences, tables rondes et stands
+          </dd>
+        </div>
       </dl>
+      <div class="relative -mx-4 mt-10 overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur sm:-mx-6 sm:mt-16 sm:rounded-2xl md:mx-0"> 
+        <div class="relative px-6 py-10 sm:px-16">
+          <div class="mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div>
+              <h3 class="font-display text-2xl font-medium tracking-tight text-blue-900">
+                Inscription gratuite
+              </h3>
+              <p class="mt-2 text-lg tracking-tight text-blue-900">
+                Places limitées • Réservation obligatoire
+              </p>
+            </div>
+            <Button href="#" class="flex-none">
+              S'inscrire
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
   </Container>
-</div> 
+</div>
