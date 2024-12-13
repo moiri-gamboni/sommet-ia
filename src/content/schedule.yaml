@@ -1,31 +1,7 @@
-- id: accueil-exposants
-  type: Accueil des exposants
-  description: Installation des stands et préparation
-  start: "9h00"
-  end: "9h45"
-  speaker: null
-
-- id: accueil
-  type: Accueil du public
-  description: Inscription et orientation, distribution du programme et des badges
-  start: "9h30"
-  end: "10h15"
-  speaker: null
-
-- id: ouverture
-  type: Ouverture
-  description: Mot de bienvenue et présentation des objectifs
-  start: "10h00"
-  end: "10h15"
-  speaker:
-    name: Steven McHail
-    role: Designer at Globex Corporation
-    image: ./schedule/images/steven-mchail.jpg
-
 - id: conference
   type: Grande conférence
   description: Intervention majeure sur les enjeux de gouvernance de l'IA
-  start: "10h15"
+  start: "10h00"
   end: "11h30"
 
 - id: stands-1
@@ -39,7 +15,7 @@
   type: Table ronde #1
   description: Discussion thématique sur la gouvernance de l'IA
   start: "12h00"
-  end: "13h15"
+  end: "13h00"
   speaker:
     name: Kimberly Parsons
     role: VP of Design at Umbrella Corp
@@ -48,21 +24,14 @@
 - id: dejeuner
   type: Pause déjeuner
   description: Buffet et networking
-  start: "13h15"
+  start: "13h00"
   end: "14h00"
-  speaker: null
-
-- id: annonce-aprem
-  type: Annonce de l'après-midi
-  description: Présentation des objectifs et du déroulé
-  start: "14h00"
-  end: "14h15"
   speaker: null
 
 - id: table-ronde-2
   type: Table ronde #2
   description: Discussion thématique et échanges avec la salle
-  start: "14h15"
+  start: "14h00"
   end: "15h30"
   speaker:
     name: Heather Terry
