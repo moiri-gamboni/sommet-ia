@@ -1,3 +1,10 @@
+- id: accueil
+  type: Accueil du public
+  description: Inscription et orientation, distribution du programme et des badges
+  start: "9h30"
+  end: "10h00"
+  speaker: null
+  
 - id: conference
   type: Grande conférence
   description: Intervention majeure sur les enjeux de gouvernance de l'IA
