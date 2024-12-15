@@ -35,7 +35,7 @@ import backgroundNewsletter from '../assets/background-newsletter.jpg';
           engagés pour élaborer des propositions concrètes de gouvernance de l'IA.
         </p>
       </div>
-      <dl class="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+      <dl class="mt-10 grid grid-cols-1 gap-y-6 sm:mt-16 sm:gap-y-10 md:grid-cols-3 md:gap-x-16">
         <div>
           <dt class="font-mono text-sm text-blue-600">Date</dt>
           <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
@@ -65,20 +65,22 @@ import backgroundNewsletter from '../assets/background-newsletter.jpg';
           </dd>
         </div>
       </dl>
-      <div class="relative -mx-4 mt-10 overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur sm:-mx-6 sm:mt-16 sm:rounded-2xl md:mx-0"> 
-        <div class="relative px-6 py-10 sm:px-16">
-          <div class="mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+      <div class="relative mt-10 overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur rounded-2xl">
+        <div class="relative px-4 py-6 sm:px-16 sm:py-10">
+          <div class="mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
             <div>
               <h3 class="font-display text-2xl font-medium tracking-tight text-blue-900">
                 Inscription gratuite
               </h3>
-              <p class="mt-2 text-lg tracking-tight text-blue-900">
+              <p class="mt-1 text-lg tracking-tight text-blue-900 sm:mt-2">
                 Places limitées • Réservation obligatoire
               </p>
             </div>
-            <Button href="#" class="flex-none">
-              S'inscrire
-            </Button>
+            <div class="flex border-t border-blue-900/10 pt-4 sm:border-0 sm:pt-0">
+              <Button href="#" class="w-full sm:w-auto">
+                S'inscrire
+              </Button>
+            </div>
           </div>
         </div>
       </div>
