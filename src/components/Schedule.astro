@@ -35,16 +35,7 @@ const schedule = await getCollection('schedule')
                 {/* Time and Details Column */}
                 <div class="max-w-prose">
                   <div class="flex flex-col">
-                    {timeSlot.data.speaker === undefined ? (
-                      <>
-                        <h3 class="text-lg font-semibold tracking-tight text-blue-900">
-                          [Intervenant.e à déterminer]
-                        </h3>
-                        <p class="mt-1 font-mono text-md font-medium text-blue-600">
-                          {timeSlot.data.type}
-                        </p>
-                      </>
-                    ) : timeSlot.data.speaker ? (
+                    {timeSlot.data.speaker ? (
                       <>
                         <h3 class="text-lg font-semibold tracking-tight text-blue-900">
                           {timeSlot.data.speaker.name}
@@ -71,9 +62,7 @@ const schedule = await getCollection('schedule')
 
                 {/* Speaker Image Column */}
                 {timeSlot.data.speaker && (
-                  <div class="hidden sm:block w-[8rem] lg:w-[10rem]">
                     <SpeakerImage speaker={timeSlot.data.speaker} />
-                  </div>
                 )}
               </div>
             </li>
