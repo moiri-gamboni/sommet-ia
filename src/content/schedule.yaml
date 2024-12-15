@@ -1,6 +1,6 @@
 - id: accueil
   type: Accueil du public
-  description: Inscription et orientation, distribution du programme et des badges
+  description: Inscription et orientation, distribution du programme
   start: "9h30"
   end: "10h00"
   speaker: null
