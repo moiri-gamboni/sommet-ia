@@ -31,9 +31,9 @@ const schedule = await getCollection('schedule')
         <ol role="list" class="divide-y divide-blue-900/5">
           {schedule.map((timeSlot) => (
             <li class="relative px-6 py-6 lg:px-10 lg:py-8">
-              <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 lg:gap-8">
+              <div class="grid grid-cols-[minmax(0,1fr),auto] items-center gap-16 lg:gap-16">
                 {/* Time and Details Column */}
-                <div class="lg:col-span-3">
+                <div class="max-w-prose">
                   <div class="flex flex-col">
                     {timeSlot.data.speaker === undefined ? (
                       <>
@@ -71,12 +71,8 @@ const schedule = await getCollection('schedule')
 
                 {/* Speaker Image Column */}
                 {timeSlot.data.speaker && (
-                  <div class="lg:col-span-1">
-                    <div class="flex justify-end">
-                      <div class="w-16 flex-none lg:w-32">
-                        <SpeakerImage speaker={timeSlot.data.speaker} />
-                      </div>
-                    </div>
+                  <div class="hidden sm:block w-[8rem] lg:w-[10rem]">
+                    <SpeakerImage speaker={timeSlot.data.speaker} />
                   </div>
                 )}
               </div>

@@ -10,6 +10,10 @@
   description: Intervention majeure sur les enjeux de gouvernance de l'IA
   start: "10h00"
   end: "11h30"
+  # speaker:
+  #   name: Kimberly Parsons
+  #   role: VP of Design at Umbrella Corp
+  #   image: ./schedule/images/kimberly-parsons.jpg
 
 # - id: stands-1
 #   type: Stands et concours
