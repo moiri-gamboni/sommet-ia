@@ -29,8 +29,9 @@ import Button from './Button.astro';
 </style>
 
 <header class="sticky top-0 z-50 flex-none lg:p-8 header-blur">
-  <Container class="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
-    <div class="mt-10 lg:mt-0 lg:grow lg:basis-0">
+  {/* When logo is uncommented, change sm:justify-center to sm:justify-between */}
+  <Container class="flex flex-wrap items-center justify-center sm:justify-center lg:flex-nowrap">
+    <div class="m-4 lg:mt-0 lg:grow lg:basis-0">
       <!-- <Logo class="h-12 w-auto text-slate-900" /> -->
     </div>
     <div class="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-blue-600/10 py-4 font-mono text- text-blue-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
@@ -42,7 +43,7 @@ import Button from './Button.astro';
         <p>Paris</p>
       </div>
     </div>
-    <div class="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
+    <div class="hidden sm:m-4 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
       <Button href="#">S'inscrire</Button>
     </div>
   </Container>
