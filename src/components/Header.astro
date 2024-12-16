@@ -28,29 +28,38 @@ import Button from './Button.astro';
   }
 </style>
 
-<header class="sticky top-0 z-50 flex-none lg:p-8 header-blur">
-  {/* When logo is uncommented, change sm:justify-center to sm:justify-between */}
-  <Container class="flex flex-wrap items-center justify-center sm:justify-center lg:flex-nowrap">
-    <div class="m-4 lg:mt-0 lg:grow lg:basis-0">
-      <!-- <Logo class="h-12 w-auto text-slate-900" /> -->
-    </div>
-    <div class="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-blue-600/10 py-4 font-mono text- text-blue-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
-      <div class="mx-auto flex items-center gap-4 px-4">
-        <p>
-          <time datetime="2025-02-08">8 février 2025</time>
-        </p>
-        <DiamondIcon class="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
-        <p>Paris</p>
+<header class="sticky top-0 z-50 flex-none py-4 sm:p-8 header-blur">
+  <Container class="sm:px-0 md:px-6">
+    <div class="grid grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr] items-center gap-4">
+      {/* Logo - hidden on mobile */}
+      <div class="hidden sm:block lg:m-0">
+        <Logo class="h-16"/>
       </div>
-    </div>
-    <div class="hidden sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end gap-4">
-      <Button href="https://lu.ma/cvti999q" variant="outline">Voir l'événement</Button>
-      <Button 
-        href="https://coda.io/form/Formulaire-dinscription-a-l-evenement-Reprendre-le-Controle_dfk2IaQA4db" 
-        variant="solid"
-      >
-        Candidater
-      </Button>
+
+      {/* Date - only visible on lg and up */}
+      <div class="hidden lg:block whitespace-nowrap py-4 font-mono text-blue-600">
+        <div class="flex items-center gap-4">
+          <p>
+            <time datetime="2025-02-08">8 février 2025</time>
+          </p>
+          <DiamondIcon class="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
+          <p>Paris</p>
+        </div>
+      </div>
+
+      {/* Buttons */}
+      <div class="col-span-3 sm:col-start-2 sm:col-span-2 lg:col-start-3 lg:col-span-1 flex justify-between sm:justify-end gap-4 lg:m-0">
+        <Button class="h-12 sm:h-auto" href="https://lu.ma/cvti999q" variant="outline">
+          Voir l'événement
+        </Button>
+        <Button 
+          href="https://coda.io/form/Formulaire-dinscription-a-l-evenement-Reprendre-le-Controle_dfk2IaQA4db" 
+          class="h-12 sm:h-auto"
+          variant="solid"
+        >
+          Candidater
+        </Button>
+      </div>
     </div>
   </Container>
 </header> 

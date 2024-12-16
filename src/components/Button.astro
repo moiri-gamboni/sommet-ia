@@ -10,7 +10,7 @@ interface Props extends HTMLAttributes<'a' | 'button'> {
 
 const { href, class: className, variant = 'solid', ...props } = Astro.props;
 
-const baseClasses = 'inline-flex justify-center rounded-2xl p-4 text-base font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500';
+const baseClasses = 'inline-flex whitespace-nowrap items-center justify-center rounded-2xl p-4 text-base font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500';
 
 const variantClasses = {
   solid: 'bg-blue-600 text-white hover:bg-blue-500 active:text-white/70',
