@@ -30,7 +30,7 @@
 
 - id: dejeuner
   type: Pause déjeuner
-  description: Buffet et networking
+  description: Buffet et rencontres
   start: "13h00"
   end: "14h00"
   speaker: null
