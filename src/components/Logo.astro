@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import type { HTMLAttributes } from 'astro/types';
-import logoImage from '../assets/logo/logo.png';
-import titleImage from '../assets/logo/title.png';
+import logoImage from '../assets/logo/logo.svg';
+import titleImage from '../assets/logo/title.svg';
 
 interface Props extends HTMLAttributes<'div'> {
   class?: string;
@@ -13,7 +13,7 @@ const { class: className, vertical = false, ...props } = Astro.props;
 ---
 
 <div class:list={[
-  "flex items-center gap-3 w-full",
+  "flex items-center w-full",
   vertical ? "flex-col" : "",
   className
 ]} {...props}>
@@ -25,6 +25,6 @@ const { class: className, vertical = false, ...props } = Astro.props;
   <Image 
     src={titleImage}
     alt="Reprendre le Contrôle: Forum des solutions pour une IA compatible avec l'humanité"
-    class={vertical ? "w-96" : "h-full w-auto"}
+    class={`${vertical ? "w-96" : "h-full w-auto"} ${vertical ? "mt-[3%]" : "ml-[3%]"}`}
   />
 </div>
