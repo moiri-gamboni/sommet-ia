@@ -33,7 +33,9 @@ import Button from './Button.astro';
     <div class="grid grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr] items-center gap-4">
       {/* Logo - hidden on mobile */}
       <div class="hidden sm:block lg:m-0">
-        <Logo class="h-16"/>
+        <a href="/">
+          <Logo class="h-16" hoverable={true}/>
+        </a>
       </div>
 
       {/* Date - only visible on lg and up */}
@@ -53,11 +55,11 @@ import Button from './Button.astro';
           S'inscrire à l'événement
         </Button>
         <Button 
-          href="https://coda.io/form/Formulaire-dinscription-a-l-evenement-Reprendre-le-Controle_dfk2IaQA4db" 
+          href="/contribuer" 
           class="h-12 sm:h-auto"
           variant="solid"
         >
-          Candidater
+          Contribuer
         </Button>
       </div>
     </div>

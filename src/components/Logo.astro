@@ -7,20 +7,25 @@ import titleImage from '../assets/logo/title.svg';
 interface Props extends HTMLAttributes<'div'> {
   class?: string;
   vertical?: boolean;
+  hoverable?: boolean;
 }
 
-const { class: className, vertical = false, ...props } = Astro.props;
+const { class: className, vertical = false, hoverable = false, ...props } = Astro.props;
 ---
 
 <div class:list={[
   "flex items-center w-full",
   vertical ? "flex-col" : "",
+  hoverable && "group",
   className
 ]} {...props}>
   <Image 
     src={logoImage}
     alt=""
-    class={vertical ? "w-64" : "h-full w-auto"}
+    class:list={[
+      vertical ? "w-64" : "h-full w-auto",
+      hoverable && "transform-gpu origin-center motion-safe:transition-transform motion-safe:group-hover:scale-125"
+    ]}
   />
   <Image 
     src={titleImage}
