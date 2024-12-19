@@ -6,6 +6,11 @@ import Button from './Button.astro';
 ---
 
 <style>
+  .header-blur {
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* Modern browsers with animation-timeline support */
   @supports (animation-timeline: scroll()) {
     @media (prefers-reduced-motion: no-preference) {
       .header-blur {
@@ -28,7 +33,10 @@ import Button from './Button.astro';
   }
 </style>
 
-<header class="sticky top-0 z-50 flex-none py-4 sm:p-8 header-blur">
+<header 
+  class="sticky top-0 z-50 flex-none py-4 sm:p-8 header-blur" 
+  id="main-header"
+>
   <Container class="sm:px-0 md:px-6">
     <div class="grid grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr] items-center gap-4">
       {/* Logo - hidden on mobile */}
@@ -64,4 +72,29 @@ import Button from './Button.astro';
       </div>
     </div>
   </Container>
-</header> 
+</header>
+
+<script>
+  function initHeaderScroll() {
+    const hasTimelineSupport = CSS.supports('animation-timeline: scroll()');
+
+    if (!hasTimelineSupport) {
+      const header = document.getElementById('main-header');
+      if (!header) return;
+      
+      window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const threshold = 200;
+        
+        const progress = Math.min(scrollPosition / threshold, 1);
+        const blur = 12 * progress;
+        const opacity = 0.7 * progress;
+        
+        header.style.backdropFilter = `blur(${blur}px)`;
+        header.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+      });
+    }
+  }
+
+  initHeaderScroll();
+</script> 
