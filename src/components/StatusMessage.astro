@@ -2,9 +2,11 @@
 interface Props {
   id: string;
   class?: string;
+  variant: 'info' | 'success' | 'error';
+  message: string;
 }
 
-const { id, class: className } = Astro.props;
+const { id, class: className, variant, message } = Astro.props;
 
 const variants = {
   info: {
@@ -53,23 +55,18 @@ const variants = {
     style: 'ring-red-600/20 text-red-600'
   }
 };
+
+const currentVariant = variants[variant];
 ---
 
-<div id={id} class:list={["hidden", className]}>
-  {/* We need both hidden and flex here because we toggle visibility by removing hidden,
-      at which point flex takes effect to create the layout */}
-  <div id={`${id}-info`} class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-blue-900/5 ring-1", variants.info.style]}>
-    <svg class="h-5 w-5 animate-spin" viewBox="0 0 24 24" set:html={variants.info.icon} />
-    <p class="text-sm font-medium tracking-tight text-blue-900">Envoi en cours...</p>
-  </div>
-
-  <div id={`${id}-success`} class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-blue-900/5 ring-1", variants.success.style]}>
-    <svg class="h-5 w-5" viewBox="0 0 24 24" set:html={variants.success.icon} />
-    <p class="text-sm font-medium tracking-tight text-blue-900">Inscription réussie !</p>
-  </div>
-
-  <div id={`${id}-error`} class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-blue-900/5 ring-1", variants.error.style]}>
-    <svg class="h-5 w-5" viewBox="0 0 24 24" set:html={variants.error.icon} />
-    <p class="text-sm font-medium tracking-tight text-blue-900">Une erreur est survenue. Veuillez réessayer.</p>
-  </div>
+<div 
+  id={id} 
+  class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-blue-900/5 ring-1", currentVariant.style, className]}
+>
+  <svg 
+    class:list={["h-5 w-5", { "animate-spin": variant === 'info' }]} 
+    viewBox="0 0 24 24" 
+    set:html={currentVariant.icon} 
+  />
+  <p class="text-sm font-medium tracking-tight text-blue-900">{message}</p>
 </div>

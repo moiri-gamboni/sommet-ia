@@ -38,28 +38,41 @@ import StatusMessage from './StatusMessage.astro';
     </Button>
   </div>
   
-  <StatusMessage 
-    id="form-status" 
-    class="mt-4"
-    variant="info"
-  />
+  <div class="mt-4">
+    <StatusMessage 
+      id="status-info"
+      variant="info"
+      message="Envoi en cours..."
+      class="hidden"
+    />
+    <StatusMessage 
+      id="status-success"
+      variant="success"
+      message="Inscription réussie !"
+      class="hidden"
+    />
+    <StatusMessage 
+      id="status-error"
+      variant="error"
+      message="Une erreur est survenue. Veuillez réessayer."
+      class="hidden"
+    />
+  </div>
 </form>
 
 <script>
   import { actions } from 'astro:actions';
 
-  const form = document.querySelector('.newsletter-form');
-  const statusContainer = document.getElementById('form-status');
-  const statusInfo = document.getElementById('form-status-info');
-  const statusSuccess = document.getElementById('form-status-success');
-  const statusError = document.getElementById('form-status-error');
+  const form = document.querySelector('.newsletter-form') as HTMLFormElement;
+  const statusInfo = document.getElementById('status-info');
+  const statusSuccess = document.getElementById('status-success');
+  const statusError = document.getElementById('status-error');
 
   form?.addEventListener('submit', async (event) => {
     event.preventDefault();
     
     try {
       // Hide all states and show loading
-      statusContainer?.classList.remove('hidden');
       statusSuccess?.classList.add('hidden');
       statusError?.classList.add('hidden');
       statusInfo?.classList.remove('hidden');
@@ -76,7 +89,7 @@ import StatusMessage from './StatusMessage.astro';
       
       // Hide after 5 seconds
       setTimeout(() => {
-        statusContainer?.classList.add('hidden');
+        statusSuccess?.classList.add('hidden');
       }, 5000);
       
     } catch (error) {
