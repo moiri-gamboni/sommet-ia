@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import BackgroundImage from '../components/BackgroundImage.astro';
+
+const title = "Politique de Confidentialité - IA: Reprendre le Contrôle";
+const description = "Notre politique de confidentialité concernant l'utilisation de Simple Analytics sur notre site.";
+---
+
+<Layout title={title} description={description}>
+	<div class="relative py-20 sm:pb-24 sm:pt-36">
+		<BackgroundImage class="-bottom-14 -top-36" />
+		<Container class="relative">
+			<div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+				<h1 class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 mb-12">
+					Politique de Confidentialité
+				</h1>
+				
+				<div class="mt-6 space-y-6 text-lg tracking-tight text-blue-900">
+					<p>
+						Chez controleia.org, nous utilisons Simple Analytics pour l'analyse de notre site web. Simple Analytics collecte et traite des métriques anonymes et nous fournit des informations pour nous aider à comprendre comment les visiteurs utilisent notre site web et d'où provient notre trafic.
+					</p>
+
+					<p>
+						Simple Analytics nous permet d'améliorer notre site web et de créer une meilleure expérience pour nos visiteurs. Nous ne suivons pas et ne profilons pas les visiteurs, et nous ne diffusons pas de publicités personnalisées. Nous ne partageons ces données avec personne.
+					</p>
+
+					<p>
+						Simple Analytics est un outil respectueux de la vie privée et ne collecte pas vos données personnelles. Vous pouvez en apprendre davantage sur la façon dont Simple Analytics traite les données sur 
+						<a href="https://www.simpleanalytics.com/fr" class="text-blue-600 hover:text-blue-800">son site web</a>.
+					</p>
+				</div>
+			</div>
+		</Container>
+	</div>
+</Layout> 

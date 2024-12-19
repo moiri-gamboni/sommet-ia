@@ -4,12 +4,15 @@ import Logo from './Logo.astro';
 ---
 
 <footer class="flex-none py-16">
-  <Container class="flex flex-col items-center md:flex-row md:justify-between">
+  <Container class="flex flex-col items-center space-y-8 md:flex-row md:items-center md:justify-between md:space-y-0">
     <div class="flex justify-center md:w-auto">
       <Logo class="h-12" />
     </div>
-    <p class="mt-6 text-base text-slate-500 text-center md:text-left md:mt-0">
+    <p class="text-base text-slate-500 text-center">
       Organisé par <a href="https://www.pauseia.fr" class="text-blue-600 hover:text-blue-800">Pause IA</a>
     </p>
+    <div>
+      <a href="/confidentialite" class="text-sm text-blue-600 hover:text-blue-800">Politique de confidentialité</a>
+    </div>
   </Container>
 </footer>
