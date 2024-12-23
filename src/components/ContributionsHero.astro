@@ -1,3 +1,6 @@
+---
+import Button from './Button.astro';
+---
 <div>
   <h1 class="font-display text-5xl font-medium tracking-tighter text-blue-600 sm:text-7xl">
     Appel à Contributions
@@ -8,4 +11,29 @@
   <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
     Que vous soyez expert reconnu, professionnel du secteur, chercheur ou étudiant, votre voix compte. Découvrez ci-dessous les différents formats de participation et rejoignez-nous dans cette initiative cruciale.
   </p>
+  <div class="mt-8">
+    <div class="relative overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur rounded-2xl border-2 border-blue-600">
+      <div class="relative px-4 py-6 sm:px-16 sm:py-10">
+        <div class="mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+          <div>
+            <h3 class="font-display text-2xl font-medium tracking-tight text-blue-900">
+              Comment participer ?
+            </h3>
+            <p class="mt-1 text-lg tracking-tight text-blue-900 sm:mt-2">
+              Découvrez les modalités ci-dessous ou remplissez directement le formulaire pour participer
+            </p>
+          </div>
+          <div class="flex border-t border-blue-900/10 pt-4 sm:border-0 sm:pt-0">
+            <Button 
+              href="https://coda.io/form/Formulaire-dinscription-a-l-evenement-Reprendre-le-Controle_dfk2IaQA4db" 
+              variant="solid" 
+              class="w-full sm:w-auto"
+            >
+              Remplir le formulaire
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div> 
