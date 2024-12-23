@@ -5,11 +5,11 @@ import NewsletterForm from './NewsletterForm.astro';
 import backgroundImage from '../assets/background-newsletter.jpg';
 ---
 
-<section id="newsletter" aria-label="Newsletter">
+<section id="newsletter" aria-label="Newsletter" class="bg-[#eeffee]">
   <Container>
-    <div class="relative -mx-4 overflow-hidden bg-indigo-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+    <div class="relative -mx-4 overflow-hidden bg-[#eeffee] px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36 border-2 border-red-600">
       <Image
-        class="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
+        class="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%] opacity-30"
         src={backgroundImage}
         alt=""
         width={919}
@@ -18,10 +18,10 @@ import backgroundImage from '../assets/background-newsletter.jpg';
       />
       <div class="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
         <div>
-          <p class="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+          <p class="font-display text-4xl font-medium tracking-tighter text-red-600 sm:text-5xl">
             Restez informé(e) de l'évolution de l'événement
           </p>
-          <p class="mt-4 text-lg tracking-tight text-blue-900">
+          <p class="mt-4 text-lg tracking-tight text-green-900">
             Découvrez les nouveaux intervenants, les détails pratiques et les mises à jour du programme.
           </p>
         </div>

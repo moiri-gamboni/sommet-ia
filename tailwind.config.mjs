@@ -31,6 +31,28 @@ export default {
 			maxWidth: {
 				'2xl': '40rem',
 			},
+			animation: {
+				'bounce-slow': 'bounce 2s infinite',
+				'float-music': 'float-music 3s ease-in-out infinite',
+				'note-float-left': 'note-float-left 2s ease-out infinite',
+				'note-float-right': 'note-float-right 2s ease-out infinite',
+			},
+			keyframes: {
+				'float-music': {
+					'0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(10deg)' },
+				},
+				'note-float-left': {
+					'0%': { transform: 'translate(0, 0) scale(1)', opacity: '0' },
+					'50%': { transform: 'translate(-10px, -50px) scale(1.2)', opacity: '1' },
+					'100%': { transform: 'translate(-20px, -100px) scale(1)', opacity: '0' },
+				},
+				'note-float-right': {
+					'0%': { transform: 'translate(0, 0) scale(1)', opacity: '0' },
+					'50%': { transform: 'translate(10px, -50px) scale(1.2)', opacity: '1' },
+					'100%': { transform: 'translate(20px, -100px) scale(1)', opacity: '0' },
+				},
+			},
 		},
 	},
 	plugins: [headlessuiPlugin],

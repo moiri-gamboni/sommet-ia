@@ -26,7 +26,7 @@ import Button from './Button.astro';
         }
         to {
           backdrop-filter: blur(12px);
-          background-color: rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 245, 245, 0.7);
         }
       }
     }
@@ -34,7 +34,7 @@ import Button from './Button.astro';
 </style>
 
 <header 
-  class="sticky top-0 z-50 flex-none py-4 sm:p-8 header-blur" 
+  class="sticky top-0 z-40 flex-none py-4 sm:p-8 header-blur" 
   id="main-header"
 >
   <Container class="sm:px-0 md:px-6">
@@ -47,7 +47,7 @@ import Button from './Button.astro';
       </div>
 
       {/* Date - only visible on lg and up */}
-      <div class="hidden lg:block whitespace-nowrap py-4 font-mono text-blue-600">
+      <div class="hidden lg:block whitespace-nowrap py-4 font-mono text-green-800">
         <div class="flex items-center gap-4">
           <p>
             <time datetime="2025-02-08">8 février 2025</time>
@@ -60,12 +60,13 @@ import Button from './Button.astro';
       {/* Buttons */}
       <div class="col-span-3 sm:col-start-2 sm:col-span-2 lg:col-start-3 lg:col-span-1 flex justify-between sm:justify-end gap-4 lg:m-0">
         <Button class="h-12 sm:h-auto" href="https://lu.ma/cvti999q" variant="outline">
-          S'inscrire à l'événement
+          S'inscrire à l'événement
         </Button>
         <Button 
           href="/contribuer" 
           class="h-12 sm:h-auto"
           variant="solid"
+          style="background-color: var(--christmas-green); color: white;"
         >
           Contribuer
         </Button>

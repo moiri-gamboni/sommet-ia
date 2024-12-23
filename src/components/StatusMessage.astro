@@ -26,7 +26,7 @@ const variants = {
         class="opacity-25"
       />
     `,
-    style: 'ring-blue-900/10 text-blue-600'
+    style: 'ring-green-900/10 text-green-600'
   },
   success: {
     icon: `
@@ -61,12 +61,12 @@ const currentVariant = variants[variant];
 
 <div 
   id={id} 
-  class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-blue-900/5 ring-1", currentVariant.style, className]}
+  class:list={["hidden flex items-center gap-3 rounded-2xl p-4 bg-white backdrop-blur shadow-xl shadow-green-900/5 ring-1", currentVariant.style, className]}
 >
   <svg 
     class:list={["h-5 w-5", { "animate-spin": variant === 'info' }]} 
     viewBox="0 0 24 24" 
     set:html={currentVariant.icon} 
   />
-  <p class="text-sm font-medium tracking-tight text-blue-900">{message}</p>
+  <p class="text-sm font-medium tracking-tight text-green-900">{message}</p>
 </div>

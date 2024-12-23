@@ -10,7 +10,7 @@ interface Props {
 const { class: classList, position = 'left' } = Astro.props;
 ---
 
-<div class:list={['absolute inset-0 overflow-hidden bg-indigo-50', classList]}>
+<div class:list={['absolute inset-0 overflow-hidden bg-[#eeffee]', classList]}>
   <Image
     class:list={[
       'absolute top-0',
@@ -25,6 +25,6 @@ const { class: classList, position = 'left' } = Astro.props;
     height={1495}
     loading="eager"
   />
-  <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
+  <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#eeffee]" />
+  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#eeffee]" />
 </div> 

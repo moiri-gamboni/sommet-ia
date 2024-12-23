@@ -7,15 +7,37 @@ import backgroundNewsletter from '../assets/background-newsletter.jpg';
 import Logo from './Logo.astro';
 ---
 
-<div class="relative py-20 sm:pb-24 sm:pt-36">
+<div class="relative py-20 sm:pb-24 sm:pt-36 bg-[#eeffee]">
   <BackgroundImage class="-bottom-14 -top-36" />
   <Container class="relative">
     <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-      <Logo vertical class="mb-8" />
-      <p class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 max-w-xl mx-auto mb-12">
+      <div class="relative">
+        <div class="absolute -left-24 top-1/2 -translate-y-1/2">
+          <div class="text-8xl animate-float-music relative" style="animation-delay: 0.1s;">
+            <div class="absolute top-0 -left-24">
+              <span class="absolute animate-note-float-left" style="animation-delay: 0s;">🎵</span>
+              <span class="absolute animate-note-float-left" style="animation-delay: 0.5s;">♪</span>
+              <span class="absolute animate-note-float-left" style="animation-delay: 1s;">♫</span>
+            </div>
+            🪈
+          </div>
+        </div>
+        <div class="absolute -right-24 top-1/2 -translate-y-1/2">
+          <div class="text-8xl animate-float-music relative" style="animation-delay: 0.3s;">
+            <div class="scale-x-[-1]">🪈</div>
+            <div class="absolute top-0 left-28">
+              <span class="absolute animate-note-float-right" style="animation-delay: 0.2s;">🎵</span>
+              <span class="absolute animate-note-float-right" style="animation-delay: 0.7s;">♪</span>
+              <span class="absolute animate-note-float-right" style="animation-delay: 1.2s;">♫</span>
+            </div>
+          </div>
+        </div>
+        <Logo vertical class="mb-8" />
+      </div>
+      <p class="font-display text-4xl font-medium tracking-tight text-center text-red-800 max-w-xl mx-auto mb-12">
         Forum des solutions pour une <strong>IA</strong> compatible avec l'humanité
       </p>
-      <div class="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
+      <div class="mt-6 space-y-6 font-display text-2xl tracking-tight text-green-900">
         <p>
           Le développement de l'intelligence artificielle transforme rapidement notre monde et soulève des questions 
           fondamentales pour notre avenir collectif. Les progrès accélérés en IA généraliste, portés par une intense 
@@ -25,7 +47,7 @@ import Logo from './Logo.astro';
           Cette course technologique, menée principalement par des acteurs privés, soulève des enjeux majeurs de 
           gouvernance et de sécurité. Il est essentiel d'établir un cadre international permettant un développement 
           responsable de l'IA, garantissant que ces technologies restent bénéfiques pour l'humanité. Le Sommet pour 
-          l'Action sur l'IA des 10 et 11 février 2025 représente une opportunité historique pour poser les bases 
+          l'Action sur l'IA des 10 et 11 février 2025 représente une opportunité historique pour poser les bases 
           d'une telle gouvernance mondiale.
         </p>
         <p>
@@ -36,51 +58,52 @@ import Logo from './Logo.astro';
       </div>
       <dl class="mt-10 grid grid-cols-1 gap-y-6 sm:mt-16 sm:gap-y-10 md:grid-cols-3 md:gap-x-16">
         <div>
-          <dt class="font-mono text-sm text-blue-600">Date</dt>
-          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
-            8 février 2025
+          <dt class="font-mono text-sm text-red-600">Date</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-green-900">
+            8 février 2025
           </dd>
         </div>
         <div>
-          <dt class="font-mono text-sm text-blue-600">Lieu</dt>
-          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+          <dt class="font-mono text-sm text-red-600">Lieu</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-green-900">
             <a 
               href="https://maps.app.goo.gl/P8dyGhTXAQa649Jr7"
               target="_blank"
               rel="noopener noreferrer"
-              class="group inline-flex items-center gap-3 hover:text-blue-600 transition-colors"
+              class="group inline-flex items-center gap-3 hover:text-red-600 transition-colors"
             >
               Learning Planet Institute
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-blue-900/50 group-hover:text-blue-600 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 text-green-900/50 group-hover:text-red-600 transition-colors">
                 <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
               </svg>
             </a>
           </dd>
         </div>
         <div>
-          <dt class="font-mono text-sm text-blue-600">Format</dt>
-          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
+          <dt class="font-mono text-sm text-red-600">Format</dt>
+          <dd class="mt-0.5 text-2xl font-semibold tracking-tight text-green-900">
             Conférences, tables rondes et stands
           </dd>
         </div>
       </dl>
 
-      <div class="relative mt-10 overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur rounded-2xl border-2 border-blue-600">
+      <div class="relative mt-10 overflow-hidden bg-white/60 shadow-xl shadow-green-900/5 backdrop-blur rounded-2xl border-2 border-red-600">
         <div class="relative px-4 py-6 sm:px-16 sm:py-10">
           <div class="mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
             <div>
-              <h3 class="font-display text-2xl font-medium tracking-tight text-blue-900">
+              <h3 class="font-display text-2xl font-medium tracking-tight text-green-900">
                 Appel à contributions
               </h3>
-              <p class="mt-1 text-lg tracking-tight text-blue-900 sm:mt-2">
+              <p class="mt-1 text-lg tracking-tight text-green-900 sm:mt-2">
                 Partagez votre expertise • Présentez votre projet
               </p>
             </div>
-            <div class="flex border-t border-blue-900/10 pt-4 sm:border-0 sm:pt-0">
+            <div class="flex border-t border-green-900/10 pt-4 sm:border-0 sm:pt-0">
               <Button 
                 href="/contribuer" 
                 variant="solid" 
                 class="w-full sm:w-auto"
+                style="background-color: var(--christmas-green); color: white;"
               >
                 En savoir plus
               </Button>
@@ -89,18 +112,18 @@ import Logo from './Logo.astro';
         </div>
       </div>
 
-      <div class="relative mt-6 overflow-hidden bg-white/60 shadow-xl shadow-blue-900/5 backdrop-blur rounded-2xl">
+      <div class="relative mt-6 overflow-hidden bg-white/60 shadow-xl shadow-green-900/5 backdrop-blur rounded-2xl">
         <div class="relative px-4 py-6 sm:px-16 sm:py-10">
           <div class="mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
             <div>
-              <h3 class="font-display text-2xl font-medium tracking-tight text-blue-900">
+              <h3 class="font-display text-2xl font-medium tracking-tight text-green-900">
                 Inscription gratuite à l'événement
               </h3>
-              <p class="mt-1 text-lg tracking-tight text-blue-900 sm:mt-2">
-                Places limitées • Réservation obligatoire
+              <p class="mt-1 text-lg tracking-tight text-green-900 sm:mt-2">
+                Places limitées • Réservation obligatoire
               </p>
             </div>
-            <div class="flex border-t border-blue-900/10 pt-4 sm:border-0 sm:pt-0">
+            <div class="flex border-t border-green-900/10 pt-4 sm:border-0 sm:pt-0">
               <Button href="https://lu.ma/cvti999q" class="w-full sm:w-auto">
                 S'inscrire
               </Button>

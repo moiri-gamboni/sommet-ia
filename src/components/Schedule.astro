@@ -7,13 +7,13 @@ import SpeakerImage from './SpeakerImage.astro';
 const schedule = await getCollection('schedule')
 ---
 
-<section id="schedule" aria-label="Schedule" class="py-20 sm:py-32">
+<section id="schedule" aria-label="Schedule" class="py-20 sm:py-32 bg-[#eeffee]">
   <Container class="relative z-10">
     <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-      <h2 class="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+      <h2 class="font-display text-4xl font-medium tracking-tighter text-red-600 sm:text-5xl">
         Programme
       </h2>
-      <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
+      <p class="mt-4 font-display text-2xl tracking-tight text-green-900">
         La journée s'articulera autour de moments forts : une grande conférence plénière en matinée, suivie de 
         deux tables rondes thématiques réunissant des intervenants de premier plan. Les participants pourront 
         également découvrir un espace d'exposition où seront présentés des projets innovants. Un concours 
@@ -22,9 +22,9 @@ const schedule = await getCollection('schedule')
         véritable interaction entre intervenants et participants. L'espace d'exposition restera accessible en continu, 
         offrant la possibilité aux visiteurs de découvrir les stands indépendamment des conférences.
       </p>
-      <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
+      <p class="mt-4 font-display text-2xl tracking-tight text-green-900">
         Si vous souhaitez participer à une intervention ou proposer un projet pour le concours, qui est ouvert à tous, 
-        veuillez consulter notre <a href="/contribuer" class="text-blue-600 hover:text-blue-800">appel à contributions</a>.
+        veuillez consulter notre <a href="/contribuer" class="text-red-600 hover:text-red-800">appel à contributions</a>.
       </p>
     </div>
   </Container>
@@ -32,7 +32,7 @@ const schedule = await getCollection('schedule')
     <BackgroundImage position="right" class="-bottom-32 -top-40" />
     <Container class="relative">
       <div class="mt-10 rounded-2xl bg-white/60 backdrop-blur">
-        <ol role="list" class="divide-y divide-blue-900/5">
+        <ol role="list" class="divide-y divide-green-900/5">
           {schedule.map((timeSlot) => (
             <li class="relative px-6 py-6 lg:px-10 lg:py-8">
               <div class="grid grid-cols-[minmax(0,1fr),auto] items-center gap-16 lg:gap-16">
@@ -41,19 +41,19 @@ const schedule = await getCollection('schedule')
                   <div class="flex flex-col">
                     {timeSlot.data.speaker ? (
                       <>
-                        <h3 class="text-xl font-semibold tracking-tight text-blue-900">
+                        <h3 class="text-xl font-semibold tracking-tight text-green-900">
                           {timeSlot.data.speaker.name}
                         </h3>
-                        <p class="mt-1 font-mono text-lg font-medium text-blue-600">
+                        <p class="mt-1 font-mono text-lg font-medium text-red-600">
                           {timeSlot.data.type}
                         </p>
                       </>
                     ) : (
-                      <h3 class="text-xl font-semibold tracking-tight text-blue-900">
+                      <h3 class="text-xl font-semibold tracking-tight text-green-900">
                         {timeSlot.data.type}
                       </h3>
                     )}
-                    <p class="mt-2 text-lg tracking-tight text-blue-900">
+                    <p class="mt-2 text-lg tracking-tight text-green-900">
                       {timeSlot.data.description}
                     </p>
                     <p class="mt-2 font-mono text-base text-slate-500">
