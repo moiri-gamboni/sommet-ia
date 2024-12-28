@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import Container from './Container.astro';
 import BackgroundImage from './BackgroundImage.astro';
-import SpeakerImage from './SpeakerImage.astro';
 
 const schedule = await getCollection('schedule')
 ---
@@ -35,39 +34,23 @@ const schedule = await getCollection('schedule')
         <ol role="list" class="divide-y divide-blue-900/5">
           {schedule.map((timeSlot) => (
             <li class="relative px-6 py-6 lg:px-10 lg:py-8">
-              <div class="grid grid-cols-[minmax(0,1fr),auto] items-center gap-16 lg:gap-16">
-                {/* Time and Details Column */}
-                <div class="max-w-prose">
-                  <div class="flex flex-col">
-                    {timeSlot.data.speaker ? (
-                      <>
-                        <h3 class="text-xl font-semibold tracking-tight text-blue-900">
-                          {timeSlot.data.speaker.name}
-                        </h3>
-                        <p class="mt-1 font-mono text-lg font-medium text-blue-600">
-                          {timeSlot.data.type}
-                        </p>
-                      </>
-                    ) : (
-                      <h3 class="text-xl font-semibold tracking-tight text-blue-900">
-                        {timeSlot.data.type}
-                      </h3>
-                    )}
-                    <p class="mt-2 text-lg tracking-tight text-blue-900">
-                      {timeSlot.data.description}
-                    </p>
-                    <p class="mt-2 font-mono text-base text-slate-500">
-                      <time>{timeSlot.data.start}</time>
-                      {' - '}
-                      <time>{timeSlot.data.end}</time>
-                    </p>
-                  </div>
-                </div>
-
-                {/* Speaker Image Column */}
-                {timeSlot.data.speaker && (
-                    <SpeakerImage speaker={timeSlot.data.speaker} />
+              <div>
+                <h3 class="text-xl font-semibold tracking-tight text-blue-900">
+                  {timeSlot.data.type}
+                </h3>
+                {timeSlot.data.speakers && timeSlot.data.speakers.length > 0 && (
+                  <p class="mt-1 font-mono text-medium font-medium text-blue-600">
+                    {timeSlot.data.speakers.map(speaker => speaker.name).join(', ')}
+                  </p>
                 )}
+                <p class="mt-1 text-lg tracking-tight text-blue-900">
+                  {timeSlot.data.description}
+                </p>
+                <p class="mt-1 font-mono text-base text-slate-500">
+                  <time>{timeSlot.data.start}</time>
+                  {' - '}
+                  <time>{timeSlot.data.end}</time>
+                </p>
               </div>
             </li>
           ))}

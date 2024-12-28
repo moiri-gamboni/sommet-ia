@@ -3,27 +3,18 @@
   description: Inscription et orientation, distribution du programme
   start: "9h30"
   end: "10h00"
-  speaker: null
   
 - id: conference
   type: Grande conférence
   description: Intervention majeure sur les enjeux de gouvernance de l'IA
   start: "10h00"
   end: "11h30"
-  # speaker:
-  #   name: Kimberly Parsons
-  #   role: VP of Design at Umbrella Corp
-  #   image: ./schedule/images/kimberly-parsons.jpg
-
-# - id: stands-1
-#   type: Stands et concours
-#   description: Visite des stands et vote pour le concours de projets
-#   start: "11h30"
-#   end: "12h00"
-#   speaker: null
+  speakers:
+    - name: Tournesol
+      image: ./images/tournesol.png
 
 - id: table-ronde-1
-  type: Table ronde #1
+  type: Table ronde
   description: Discussion thématique sur la gouvernance de l'IA
   start: "12h00"
   end: "13h00"
@@ -33,23 +24,19 @@
   description: Buffet et rencontres
   start: "13h00"
   end: "14h00"
-  speaker: null
 
 - id: table-ronde-2
-  type: Table ronde #2
+  type: Table ronde
   description: Discussion thématique et échanges avec la salle
   start: "14h00"
   end: "15h30"
-
-# - id: stands-2
-#   type: Stands et concours
-#   description: Derniers votes et dépouillement du concours
-#   start: "15h30"
-#   end: "16h00"
-#   speaker: null
 
 - id: presentations
   type: Session de présentations
   description: Interventions courtes et présentation du projet lauréat
   start: "16h00"
   end: "17h00"
+  speakers:
+    - name: Adam Shimi
+      role: Control AI
+      image: ./images/adam-shimi.jpg

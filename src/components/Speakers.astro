@@ -3,7 +3,7 @@ import Container from './Container.astro';
 import { getCollection } from 'astro:content';
 import SpeakerImage from './SpeakerImage.astro';
 
-const speakerSessions = await getCollection('schedule', ({ data }) => data.speaker != null)
+const speakers = await getCollection('speakers')
 ---
 
 <section id="speakers" aria-labelledby="speakers-title" class="py-20 sm:py-32">
@@ -20,14 +20,14 @@ const speakerSessions = await getCollection('schedule', ({ data }) => data.speak
       </p>
     </div>
     <div class="mt-14 grid max-w-2xl grid-cols-1 gap-8 sm:mt-16 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3">
-      {speakerSessions.map((session) => (
+      {speakers.map((speaker) => (
         <div>
-          <SpeakerImage speaker={session.data.speaker!} />
+          <SpeakerImage speaker={speaker.data} />
           <h3 class="mt-6 text-lg font-semibold tracking-tight text-slate-900">
-            {session.data.speaker!.name}
+            {speaker.data.name}
           </h3>
           <p class="mt-1 text-base tracking-tight text-slate-500">
-            {session.data.speaker!.role}
+            {speaker.data.role}
           </p>
         </div>
       ))}

@@ -1,0 +1,134 @@
+- id: otto-barten
+  name: Otto Barten
+  role: Fondateur et Directeur de l'Existential Risk Observatory
+  image: ./images/otto-barten.jpg
+
+- id: flavien-chervet
+  name: Flavien Chervet
+  role: Conférencier et auteur | Entrepreneur - Directeur Innovation @ IRIIG | Poète
+  image: ./images/flavien-chervet.jpg
+  bio: >
+    Curieux insatiable et créatif déraisonné, j'explore la philosophie, 
+    les arts, le design, les sciences, les technologies et l'entrepreneuriat.
+    
+    Tissée dans ce rhizome se dessine une cohérence : comprendre la créativité.
+    
+    
+    J'explore notamment le lien entre créativité et intelligence artificielle 
+    depuis 2014.
+    
+    Comment les IA peuvent participer à la créativité humaine ? Peuvent-elles 
+    être créatives par elle-même ? Quels impacts sur la relation humain-machine 
+    et sur nos sociétés ?
+    
+    
+    Je suis également Co-fondateur et Directeur Innovation d'IRIIG, la grande 
+    école de l'innovation française, et vice-président de Lyon-iS-Ai, un 
+    do-tank visant à démystifier l'Intelligence Artificielle et éduquer à son 
+    usage éthique.
+
+- id: marc-faddoul
+  name: Marc Faddoul
+  role: Directeur et Co-fondateur d'AI Forensics
+  image: ./images/marc-faddoul.jpg
+  bio: >
+    Marc Faddoul est un technologue transdisciplinaire et chercheur en IA,
+    expert en systèmes de recommandation et audit algorithmique. Il est
+    directeur et co-fondateur d'AI Forensics, une organisation à but non
+    lucratif qui enquête sur les algorithmes opaques et influents.
+    
+    
+    Il conseille régulièrement les régulateurs sur les aspects techniques
+    de l'éthique de l'IA et la responsabilité des plateformes, notamment
+    au sein des comités d'experts de la Commission européenne, du Conseil
+    National du Numérique (CNNum), de l'ARCOM, et des États Généraux de
+    l'Information.
+    
+    
+    Il a acquis son expérience en audit algorithmique dans le milieu
+    académique (UC Berkeley), les grandes entreprises technologiques
+    (Facebook AI), et en tant que consultant pour des startups. Il a
+    notamment développé 'You Choose', une extension de navigateur permettant
+    aux utilisateurs de reprendre le contrôle de leurs recommandations YouTube.
+
+- id: adam-shimi
+  name: Adam Shimi
+  role: Control AI
+  image: ./images/adam-shimi.jpg
+  bio: >
+    Fasciné par l'informatique en tant que discipline scientifique mais aussi 
+    en tant que domaine d'ingénierie, j'aime à la fois comprendre et construire.
+    
+    
+    Je m'intéresse plus particulièrement à la couche la plus bas-niveau du 
+    domaine, qui englobe des sujets aussi variés que les systèmes 
+    d'exploitation, les réseau ou les systèmes distribués.
+
+- id: nasri-badaoui
+  name: Nasri Badaoui
+  role: Directeur Adjoint Data Science & IA, Co-fondateur de l'Observatoire de l'IA
+  image: ./images/nasri-badaoui.jpg
+
+- id: data-for-good
+  name: Data For Good
+  image: ./images/data-for-good.png
+  bio: >
+    Data for Good est une communauté de bénévoles de la Tech mettant leurs 
+    compétences au profit de la résolution de problèmes sociaux et 
+    environnementaux.
+    
+    
+    La data science est l'un des plus puissants leviers d'innovation 
+    aujourd'hui. Et si les ONGs utilisaient le pouvoir des algorithmes au 
+    même titre que les géants de la tech ? C'est l'ambition de Data for Good : 
+    fournir aux associations les outils à la pointe de la technologie pour 
+    démultiplier leur impact sur la société.
+
+- id: cesia
+  name: Centre pour la Sécurité de l'IA - CeSIA
+  image: ./images/cesia.svg
+  bio: >
+    Nous visons à assurer un développement de l'IA à la fois sûr et 
+    bénéfique à la société dans son ensemble, en apportant à l'écosystème 
+    français les connaissances et outils nécessaires pour y parvenir.
+
+- id: tournesol
+  name: Tournesol
+  image: ./images/tournesol.png
+  bio: >
+    Tournesol est une association à but non lucratif. Notre mission est de 
+    contribuer à rendre les algorithmes à grande échelle robustement 
+    bénéfiques.
+    
+    
+    Notre principale solution est une plateforme, disponible sur tournesol.app. 
+    Elle est conçue pour recueillir les jugements d'un grand nombre de 
+    contributeurs sur les contenus qui devraient être recommandés à grande 
+    échelle, car ils sont d'utilité publique.
+    
+    
+    Les contributeurs peuvent partager leurs données publiquement ou en privé. 
+    La base de données publique sera facilement téléchargeable. Nous espérons 
+    que cela motivera et accélérera la recherche sur les algorithmes de 
+    recommandation robustement bénéfiques, et sur l'IA sûre et éthique.
+    
+    
+    Nous espérons également que les scores Tournesol obtenus en agrégeant les 
+    jugements des différents contributeurs seront utilisés pour auditer ou 
+    améliorer les algorithmes de recommandation actuels.
+
+- id: everyone-ai
+  name: everyone.AI
+  image: ./images/everyone-ai.svg 
+  bio: >
+    Le projet everyone.AI sensibilise et éduque sur les risques et les 
+    opportunités de l'IA pour les enfants.
+    
+    
+    À travers la recherche, la collaboration et le plaidoyer, nous nous 
+    efforçons de garantir que les interactions numériques soient responsables, 
+    enrichissantes et utiles.
+    
+    
+    Notre projet souligne l'urgence d'une réglementation proactive et d'une 
+    éducation dans un paysage de l'IA en rapide évolution.

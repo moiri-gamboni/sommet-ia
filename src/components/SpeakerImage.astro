@@ -1,8 +1,8 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
-type Speaker = NonNullable<CollectionEntry<'schedule'>['data']['speaker']>;
+type Speaker = NonNullable<CollectionEntry<'speakers'>['data']>;
 
 interface Props {
   speaker: Speaker;
@@ -12,10 +12,11 @@ const { speaker } = Astro.props;
 ---
 
 <div class="group relative transform overflow-hidden rounded-2xl bg-slate-100" style="aspect-ratio: 1">
-  <Image
-    class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+  <Picture
+    class="absolute inset-0 h-full w-full object-contain transition duration-300 group-hover:scale-110"
     src={speaker.image}
     alt={speaker.name}
-    format="webp"
+    formats={['avif', 'webp']}
+    densities={[1, 1.5, 2, 2.5, 3]}
   />
 </div>
