@@ -72,10 +72,10 @@
   role: Fondateur et Directeur de l'Existential Risk Observatory
   image: ./images/otto-barten.jpg
 
-- id: nasri-badaoui
-  name: Nasri Badaoui
-  role: Directeur Adjoint Data Science & IA, Co-fondateur de l'Observatoire de l'IA
-  image: ./images/nasri-badaoui.jpg
+# - id: nasri-badaoui
+#   name: Nasri Badaoui
+#   role: Directeur Adjoint Data Science & IA, Co-fondateur de l'Observatoire de l'IA
+#   image: ./images/nasri-badaoui.jpg
 
 - id: adam-shimi
   name: Adam Shimi
