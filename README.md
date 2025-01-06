@@ -1,6 +1,6 @@
 # Forum des Solutions pour une IA Compatible avec l'Humanité
 
-Site web pour la conférence "Reprendre le Contrôle" organisée par Pause IA, présentant une journée de conférences et d'échanges sur la gouvernance de l'IA.
+Site web pour la conférence "Reprendre le Contrôle" organisée par [Pause IA](https://pauseia.fr), présentant une journée de conférences et d'échanges sur la gouvernance de l'IA.
 
 ## 🌟 Fonctionnalités
 
