@@ -34,7 +34,24 @@
   name: Charbel-Raphaël Segerie
   role: Directeur Exécutif du Centre pour la Sécurité de l'IA - CeSIA
   image: ./images/charbel-raphael-segerie.jpg
-  bio: Charbel-Raphaël Segerie is the Executive Director of the Centre pour la Sécurité de l'IA (CeSIA) in Paris, where he leads research and education on AI safety. He teaches an AI safety course at the École Normale Supérieure, which is being developed into a textbook. His work focuses on identifying emerging risks in artificial intelligence, improving current safety methods such as RLHF and interpretability, and advancing safe-by-design AI approaches. Additionally, he contributes to AI evaluation efforts and collaborates on the EU AI Office's Code of Practice for general-purpose AI systems. Charbel also founded ML4Good, a 10-day bootcamp designed to upskill researchers in AI safety.
+  bio: >
+    Charbel-Raphaël Segerie est le Directeur Exécutif du Centre pour la 
+    Sécurité de l'IA (CeSIA) à Paris, où il dirige la recherche et la formation 
+    sur la sécurité de l'IA. Il enseigne un cours sur la sécurité de l'IA à 
+    l'École Normale Supérieure, qui est en cours de développement sous forme de 
+    manuel.
+    
+    
+    Ses travaux portent sur l'identification des risques émergents en intelligence 
+    artificielle, l'amélioration des méthodes actuelles de sécurité telles que 
+    le RLHF et l'interprétabilité, et le développement d'approches d'IA sûres 
+    dès la conception.
+    
+    
+    Il contribue également aux efforts d'évaluation de l'IA et collabore au Code 
+    de Pratique pour les systèmes d'IA à usage général du Bureau de l'IA de l'UE. 
+    Charbel a également fondé ML4Good, un bootcamp de 10 jours conçu pour former 
+    les chercheurs à la sécurité de l'IA.
 
 - id: mathilde-cerioli
   name: Mathilde Cerioli
