@@ -38,6 +38,9 @@
   start: "16h00"
   end: "17h00"
   speakers:
+    - name: Otto Barten
+      role: Fondateur et Directeur de l'Existential Risk Observatory
+      image: ./images/otto-barten.jpg
     - name: Adam Shimi
       role: Control AI
       image: ./images/adam-shimi.jpg
