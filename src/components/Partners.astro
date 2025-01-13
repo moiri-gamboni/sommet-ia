@@ -7,10 +7,23 @@ import logoXRO from '../assets/partners/XRO.png';
 import logoD4G from '../assets/partners/DFG.png';
 
 const partners = [
-  { name: 'X-Risk Observatory', logo: logoXRO },
-  { name: 'AI Forensics', logo: logoAIF },
-  { name: 'Data for Good', logo: logoD4G },
+  { 
+    name: 'Existential Risk Observatory', 
+    logo: logoXRO,
+    url: 'https://www.existentialriskobservatory.org/'
+  },
+  { 
+    name: 'AI Forensics', 
+    logo: logoAIF,
+    url: 'https://aiforensics.org/'
+  },
+  { 
+    name: 'Data for Good', 
+    logo: logoD4G,
+    url: 'https://dataforgood.fr/'
+  }
 ];
+
 ---
 
 <section id="partners" aria-label="Partenaires" class="py-20 sm:py-32">
@@ -18,11 +31,15 @@ const partners = [
     <h2 class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
       Nos Partenaires
     </h2>
-    <div class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+    <div class="mt-20 max-w-2xl flex flex-wrap justify-center gap-12 sm:mx-auto lg:mx-0 lg:max-w-none">
       {partners.map((partner) => (
-        <div class="flex items-center justify-center">
-          <Image src={partner.logo} alt={partner.name} />
-        </div>
+        <a 
+          href={partner.url}
+          class="flex items-center justify-center w-full h-40 sm:w-[calc(50%-24px)] lg:w-[calc(33.333%-32px)] rounded-2xl bg-white shadow-xl shadow-blue-900/5 border border-blue-900/10 p-6 transition hover:border-blue-900/20"
+          target="_blank"
+        >
+          <Image src={partner.logo} alt={partner.name} class="h-full w-auto object-contain" />
+        </a>
       ))}
     </div>
   </Container>
