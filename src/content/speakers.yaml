@@ -9,10 +9,10 @@
   image: ./images/lou-welgryn.jpg
 
 - id: charbel
-  name: Charbel-Raphael Ségerie
+  name: Charbel-Raphaël Segerie
   role: Directeur Exécutif du Centre pour la Sécurité de l'IA - CeSIA
   image: ./images/charbel.jpg
-  bio: Charbel-Raphael Segerie is the Executive Director of the Centre pour la Sécurité de l'IA (CeSIA) in Paris, where he leads research and education on AI safety. He teaches an AI safety course at the École Normale Supérieure, which is being developed into a textbook. His work focuses on identifying emerging risks in artificial intelligence, improving current safety methods such as RLHF and interpretability, and advancing safe-by-design AI approaches. Additionally, he contributes to AI evaluation efforts and collaborates on the EU AI Office's Code of Practice for general-purpose AI systems. Charbel also founded ML4Good, a 10-day bootcamp designed to upskill researchers in AI safety.
+  bio: Charbel-Raphaël Segerie is the Executive Director of the Centre pour la Sécurité de l'IA (CeSIA) in Paris, where he leads research and education on AI safety. He teaches an AI safety course at the École Normale Supérieure, which is being developed into a textbook. His work focuses on identifying emerging risks in artificial intelligence, improving current safety methods such as RLHF and interpretability, and advancing safe-by-design AI approaches. Additionally, he contributes to AI evaluation efforts and collaborates on the EU AI Office's Code of Practice for general-purpose AI systems. Charbel also founded ML4Good, a 10-day bootcamp designed to upskill researchers in AI safety.
 
 - id: mathilde
   name: Mathilde Cerioli
