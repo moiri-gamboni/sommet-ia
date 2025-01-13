@@ -16,8 +16,9 @@
   start: "11h30"
   end: "13h00"
   speakers:
-    - name: Tournesol
-      image: ./images/tournesol.png
+    - name: Lê Nguyên-Hoang
+      role: Co-fondateur et Président, Tournesol
+      image: ./images/le-nguyen-hoang.jpg
 
 - id: dejeuner
   type: Pause déjeuner

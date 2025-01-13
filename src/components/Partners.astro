@@ -1,0 +1,29 @@
+---
+import Container from './Container.astro';
+import { Image } from 'astro:assets';
+
+import logoAIF from '../assets/partners/AIF.svg';
+import logoXRO from '../assets/partners/XRO.png';
+import logoD4G from '../assets/partners/DFG.png';
+
+const partners = [
+  { name: 'X-Risk Observatory', logo: logoXRO },
+  { name: 'AI Forensics', logo: logoAIF },
+  { name: 'Data for Good', logo: logoD4G },
+];
+---
+
+<section id="partners" aria-label="Partenaires" class="py-20 sm:py-32">
+  <Container>
+    <h2 class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl">
+      Nos Partenaires
+    </h2>
+    <div class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32">
+      {partners.map((partner) => (
+        <div class="flex items-center justify-center">
+          <Image src={partner.logo} alt={partner.name} />
+        </div>
+      ))}
+    </div>
+  </Container>
+</section> 
