@@ -8,6 +8,28 @@
   role: Co-présidente, Data for Good
   image: ./images/lou-welgryn.jpg
 
+- id: raja-chatila
+  name: Raja Chatila
+  role: Professeur émérite à Sorbonne Université
+  image: ./images/raja-chatila.jpg
+  bio: >
+    Raja Chatila est professeur émérite d'Intelligence Artificielle, de Robotique 
+    et d'éthique à Sorbonne Université. Il y a dirigé l'Institut des Systèmes 
+    Intelligents et de Robotique (ISIR) ainsi que le laboratoire d'excellence 
+    SMART sur les interactions humain-machine. Il est auteur de plus de 180 
+    publications.
+    
+    
+    Fellow de l'IEEE, il a reçu le IEEE Robotics and Automation Pioneer Award. 
+    Il est président de l'Initiative mondiale IEEE sur l'éthique des systèmes 
+    autonomes et intelligents et membre honoraire du Comité national pilote 
+    d'éthique du numérique en France.
+    
+    
+    Il était co-président du groupe "IA responsable" du Partenariat Mondial sur 
+    l'IA (GPAI) et a été membre du groupe d'experts de haut niveau sur 
+    l'Intelligence Artificielle de la Commission européenne.
+
 - id: charbel-raphael-segerie
   name: Charbel-Raphaël Segerie
   role: Directeur Exécutif du Centre pour la Sécurité de l'IA - CeSIA
