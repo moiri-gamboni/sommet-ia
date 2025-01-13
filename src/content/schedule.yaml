@@ -4,20 +4,20 @@
   start: "9h30"
   end: "10h00"
   
-- id: conference
-  type: Grande conférence
-  description: Intervention majeure sur les enjeux de gouvernance de l'IA
-  start: "10h00"
-  end: "11h30"
-  speakers:
-    - name: Tournesol
-      image: ./images/tournesol.png
-
 - id: table-ronde-1
   type: Table ronde
   description: Discussion thématique sur la gouvernance de l'IA
-  start: "12h00"
+  start: "10h00"
+  end: "11h00"
+
+- id: conference
+  type: Grande conférence
+  description: Intervention majeure sur les enjeux de gouvernance de l'IA
+  start: "11h30"
   end: "13h00"
+  speakers:
+    - name: Tournesol
+      image: ./images/tournesol.png
 
 - id: dejeuner
   type: Pause déjeuner
