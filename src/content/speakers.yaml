@@ -8,6 +8,26 @@
   role: Co-présidente, Data for Good
   image: ./images/lou-welgryn.jpg
 
+- id: arthur-grimonpont
+  name: Arthur Grimonpont
+  role: Spécialiste des enjeux informationnels de l'IA et auteur de Algocratie (Actes Sud, 2022)
+  image: ./images/arthur-grimonpont.jpg
+  bio: >
+    Arthur Grimonpont est un ingénieur et consultant spécialisé dans la transition 
+    de nos sociétés face aux bouleversements climatiques et écologiques. Cofondateur 
+    de l'association Les Greniers d'Abondance, il promeut des politiques de résilience 
+    alimentaire adaptées à un monde à +3°C et sobre en énergies fossiles.
+
+
+    Engagé au sein de Reporters sans Frontières, il y dirige le desk IA et enjeux 
+    globaux. Il a en particulier été rapporteur de la Charte de Paris sur l'IA et 
+    le journalisme, pilotée par la lauréate du Prix Nobel de la paix Maria Ressa.
+
+
+    Auteur de l'essai Algocratie (Actes Sud, 2022), il y explore le rôle des réseaux 
+    sociaux et de leurs algorithmes de recommandation dans la diffusion de l'information 
+    et la formation des opinions.
+
 - id: raja-chatila
   name: Raja Chatila
   role: Professeur émérite à Sorbonne Université
@@ -58,6 +78,11 @@
   role: Chief Scientist, Everyone AI
   image: ./images/mathilde-cerioli.webp
 
+- id: maxime-fournes
+  name: Maxime Fournes
+  role: Co-fondateur de Pause IA
+  image: ./images/maxime-fournes.jpg
+
 - id: marc-faddoul
   name: Marc Faddoul
   role: Directeur et Co-fondateur d'AI Forensics
@@ -105,6 +130,20 @@
     école de l'innovation française, et vice-président de Lyon-iS-Ai, un 
     do-tank visant à démystifier l'Intelligence Artificielle et éduquer à son 
     usage éthique.
+
+- id: stephane-amarsy
+  name: Stéphane Amarsy
+  role: Expert en transformation numérique et auteur de Métamorphoses à l'ère de l'IA
+  image: ./images/stephane-amarsy.jpg
+  bio: >
+    Stéphane Amarsy est un expert en intelligence artificielle, innovation et 
+    prospective, passionné par les transformations organisationnelles face aux 
+    défis du futur. Actuellement PDG de The Next Mind, il accompagne les entreprises 
+    dans l'identification de leur "cœur anti-fragile", une stratégie résiliente 
+    pour s'adapter aux ruptures technologiques, économiques et sociétales. Auteur 
+    et conférencier, Stéphane allie une vision holistique des technologies et des 
+    dynamiques humaines pour construire des solutions équilibrées et durables, avec 
+    une philosophie : "S'occuper du changement avant qu'il ne s'occupe de vous !"
 
 - id: otto-barten
   name: Otto Barten
