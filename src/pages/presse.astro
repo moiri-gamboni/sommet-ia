@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import BackgroundImage from '../components/BackgroundImage.astro';
+import PdfViewer from '../components/PdfViewer.astro';
+
+const title = "Presse et Médias - Reprendre le Contrôle";
+const description = "Espace presse et médias du forum Reprendre le Contrôle. Retrouvez notre dossier de presse, logos, photos et communiqués.";
+---
+
+<Layout title={title} description={description}>
+  <div class="relative py-20 sm:pb-24 sm:pt-36">
+    <BackgroundImage class="-bottom-14 -top-36" />
+    <Container class="relative">
+      <div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+        <h1 class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 mb-12">
+          Presse et Médias
+        </h1>
+
+        <section class="mb-16">
+          <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-6">
+            Dossier de Presse
+          </h2>
+          <PdfViewer 
+            pdfPath="/kit_de_presse.pdf"
+            title="Dossier de presse - Reprendre le Contrôle"
+          />
+        </section>
+        
+        <div class="space-y-12 text-lg tracking-tight text-blue-900">
+          <section>
+            <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-4">
+              Contacts Presse
+            </h2>
+            <div class="space-y-2">
+              <p class="font-semibold">Ludwig Iguedjtal – Responsable Presse</p>
+              <p>Email : <a href="mailto:ludwig@pauseia.fr" class="text-blue-600 hover:text-blue-800">ludwig@pauseia.fr</a></p>
+              <p>Téléphone : 07.68.25.02.14</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-4">
+              Accréditation et Badges Presse
+            </h2>
+            <ul class="list-disc pl-6 space-y-4">
+              <li><span class="font-semibold">Demande d'accréditation :</span> Merci d'envoyer un email à <a href="mailto:ludwig@pauseia.fr" class="text-blue-600 hover:text-blue-800">ludwig@pauseia.fr</a> en indiquant vos nom, prénom, média représenté et coordonnées.</li>
+              <li><span class="font-semibold">Confirmation :</span> Vous recevrez sous 48h un email de confirmation avec les modalités de retrait de votre badge presse le jour de l'événement.</li>
+              <li><span class="font-semibold">Badge :</span> Un espace dédié sera prévu à l'accueil pour récupérer votre badge. Veuillez vous munir d'une pièce d'identité et de votre carte presse, si vous en disposez.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-4">
+              Procédure d'Interview et de Reportage
+            </h2>
+            <ul class="list-disc pl-6 space-y-4">
+              <li><span class="font-semibold">Demande d'interview :</span> Pour toute demande d'interview (intervenants, organisateurs, etc.), contactez-nous à l'adresse <a href="mailto:ludwig@pauseia.fr" class="text-blue-600 hover:text-blue-800">ludwig@pauseia.fr</a>. Vous pouvez préciser vos centres d'intérêt (thématique, intervenant, etc.) pour faciliter l'organisation.</li>
+              <li><span class="font-semibold">Planification :</span> Les créneaux d'interview pourront être réservés en amont ou le jour J, selon les disponibilités.</li>
+              <li><span class="font-semibold">Reportage sur place :</span> Si vous prévoyez de filmer ou de réaliser des reportages audio/vidéo, merci de le signaler à l'avance afin que nous puissions vous réserver un espace adapté.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-4">
+              Ressources Téléchargeables
+            </h2>
+            <ul class="list-disc pl-6 space-y-4">
+              <li><span class="font-semibold">Visuels et Logos :</span> Une sélection de logos et de photos haute résolution (intervenants, organisateurs, images d'illustration) est disponible sur notre espace presse en ligne :</li>
+            </ul>
+            <p class="mt-4 pl-6">
+              <a 
+                href="https://drive.google.com/drive/u/0/folders/1oaB_X17quWi9N18nrPX9FPDwlfdulQNo" 
+                class="text-blue-600 hover:text-blue-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Accéder à l'espace presse en ligne
+              </a>
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-display text-2xl font-medium tracking-tight text-blue-900 mb-4">
+              Mentions Légales et Règles Spécifiques
+            </h2>
+            <ul class="list-disc pl-6 space-y-4">
+              <li><span class="font-semibold">Droits d'image :</span> Toute utilisation d'images, d'extraits sonores ou de vidéos doit s'effectuer dans le respect de la législation en vigueur et après validation par l'équipe presse, si nécessaire.</li>
+              <li><span class="font-semibold">Validation :</span> Toute demande de reportage, d'interview ou de diffusion d'images complémentaires doit être adressée à <a href="mailto:ludwig@pauseia.fr" class="text-blue-600 hover:text-blue-800">ludwig@pauseia.fr</a> et validée par l'organisation.</li>
+            </ul>
+          </section>
+
+          <section class="!mt-8 text-base italic">
+            <p>
+              Si vous avez la moindre question, n'hésitez pas à nous contacter directement par email ou par téléphone. 
+              Nous restons à votre disposition pour vous aider à préparer votre venue et faciliter votre travail de couverture médiatique.
+            </p>
+          </section>
+        </div>
+      </div>
+    </Container>
+  </div>
+</Layout> 

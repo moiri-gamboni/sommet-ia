@@ -1,0 +1,16 @@
+---
+import PdfConsentViewer from './PdfConsentViewer';
+
+interface Props {
+  pdfPath: string;
+  title: string;
+}
+
+const { pdfPath, title } = Astro.props;
+---
+
+<div class="w-full h-[800px] border border-blue-900/10 rounded-2xl bg-white">
+  <object data={pdfPath} type="application/pdf" width="100%" height="100%" aria-label={title}>
+    <PdfConsentViewer client:load pdfPath={pdfPath} title={title} />
+  </object>
+</div> 

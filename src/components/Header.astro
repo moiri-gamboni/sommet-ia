@@ -34,13 +34,13 @@ import Button from './Button.astro';
 </style>
 
 <header 
-  class="sticky top-0 z-50 flex-none py-4 sm:p-8 header-blur" 
+  class="sticky top-0 z-50 flex-none py-4 md:p-8 header-blur" 
   id="main-header"
 >
-  <Container class="sm:px-0 md:px-6">
+  <Container class="md:px-0 md:px-6">
     <div class="grid grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr] items-center gap-4">
       {/* Logo - hidden on mobile */}
-      <div class="hidden sm:block lg:m-0">
+      <div class="hidden md:block lg:m-0">
         <a href="/">
           <Logo class="h-16" hoverable={true}/>
         </a>
@@ -58,13 +58,16 @@ import Button from './Button.astro';
       </div>
 
       {/* Buttons */}
-      <div class="col-span-3 sm:col-start-2 sm:col-span-2 lg:col-start-3 lg:col-span-1 flex justify-between sm:justify-end gap-4 lg:m-0">
-        <Button class="h-12 sm:h-auto" href="https://lu.ma/cvti999q" variant="outline">
-          S'inscrire à l'événement
+      <div class="col-span-3 md:col-start-2 md:col-span-2 lg:col-start-3 lg:col-span-1 flex justify-between md:justify-end gap-4 lg:m-0">
+        <Button class="h-12 md:h-auto" href="/presse" variant="outline">
+          Presse
+        </Button>
+        <Button class="h-12 md:h-auto" href="https://lu.ma/cvti999q" variant="outline">
+          S'inscrire
         </Button>
         <Button 
           href="/contribuer" 
-          class="h-12 sm:h-auto"
+          class="h-12 md:h-auto"
           variant="solid"
         >
           Contribuer
