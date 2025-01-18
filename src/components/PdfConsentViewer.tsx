@@ -7,6 +7,7 @@ interface PdfConsentViewerProps {
 
 export default function PdfConsentViewer({ pdfPath, title }: PdfConsentViewerProps) {
   const [consent, setConsent] = useState(false);
+  const viewerUrl = `https://drive.google.com/viewerng/viewer?embedded=true&url=https://controleia.org${pdfPath}`;
 
   if (!consent) {
     return (
@@ -41,7 +42,7 @@ export default function PdfConsentViewer({ pdfPath, title }: PdfConsentViewerPro
 
   return (
     <iframe
-      src={`https://docs.google.com/viewer?url=https://controleia.org${pdfPath}&embedded=true`}
+      src={viewerUrl}
       width="100%"
       height="100%"
       title={title}
