@@ -40,7 +40,7 @@ const schedule = await getCollection('schedule')
                 </h3>
                 {timeSlot.data.speakers && timeSlot.data.speakers.length > 0 && (
                   <p class="mt-1 font-mono text-medium font-medium text-blue-600">
-                    {timeSlot.data.speakers.map(speaker => speaker.name).join(', ')}
+                    {timeSlot.data.speakers.join(', ')}
                   </p>
                 )}
                 <p class="mt-1 text-lg tracking-tight text-blue-900">

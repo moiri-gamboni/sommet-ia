@@ -1,46 +1,66 @@
 - id: accueil
-  type: Accueil du public
-  description: Inscription et orientation, distribution du programme
+  type: Accueil
+  description: Inscription, orientation et distribution du programme
   start: "9h30"
   end: "10h00"
   
 - id: table-ronde-1
-  type: Table ronde
-  description: Discussion thématique sur la gouvernance de l'IA
+  type: "Table ronde n° 1"
+  description: "De l'anticipation à la réalité : évaluer et prioriser les risques de l'IA"
   start: "10h00"
-  end: "11h00"
+  end: "11h15"
+  speakers:
+    - "Raja Chatila"
+    - "Lou Welgryn"
+    - "Jeremy Perret"
+    - "Mathilde Cerioli"
+    - "Arthur Grimonpont"
 
-- id: conference
-  type: Grande conférence
-  description: Intervention majeure sur les enjeux de gouvernance de l'IA
-  start: "11h30"
+- id: pause-1
+  type: Pause café
+  description: "Temps d'échange et de réseautage"
+  start: "11h15"
+  end: "11h45"
+
+- id: keynotes
+  type: Keynotes
+  description: "Interventions sur les enjeux de gouvernance de l'IA"
+  start: "11h45"
   end: "13h00"
   speakers:
-    - name: Lê Nguyên-Hoang
-      role: Co-fondateur et Président, Tournesol
-      image: ./images/le-nguyen-hoang.jpg
+    - "Maxime Fournes"
+    - "Lê Nguyên-Hoang"
 
 - id: dejeuner
-  type: Pause déjeuner
-  description: Buffet et rencontres
+  type: Déjeuner
+  description: "Buffet, rencontres et visite des stands"
   start: "13h00"
   end: "14h00"
 
 - id: table-ronde-2
-  type: Table ronde
-  description: Discussion thématique et échanges avec la salle
+  type: "Table ronde n° 2"
+  description: "Sécuriser l'avenir de l'IA, approches techniques et réglementaires"
   start: "14h00"
   end: "15h30"
+  speakers:
+    - "Henri-Alexis Corvol"
+    - "Flavien Chervet"
+    - "Charbel-Raphaël Segerie"
+    - "Anne-Sophie Simpere"
+    - "Marc Faddoul"
+
+- id: pause-2
+  type: Pause café
+  description: "Temps d'échange et de réseautage"
+  start: "15h30"
+  end: "16h00"
 
 - id: presentations
-  type: Session de présentations
-  description: Interventions courtes et présentation du projet lauréat
+  type: Présentations flash
+  description: "Session de présentations courtes mettant en lumière des initiatives innovantes dans le domaine de la sécurité de l'IA"
   start: "16h00"
-  end: "17h00"
+  end: "17h30"
   speakers:
-    - name: Otto Barten
-      role: Fondateur et Directeur de l'Existential Risk Observatory
-      image: ./images/otto-barten.jpg
-    - name: Adam Shimi
-      role: Control AI
-      image: ./images/adam-shimi.jpg
+    - "Henry Papadatos"
+    - "Adam Shimi"
+    - "Otto Barten"

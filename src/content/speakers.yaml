@@ -1,6 +1,6 @@
 - id: le-nguyen-hoang
   name: Lê Nguyên-Hoang
-  role: Co-fondateur et Président, Tournesol
+  role: PDG de Calicarpa et Président de Tournesol
   image: ./images/le-nguyen-hoang.jpg
 
 - id: lou-welgryn
@@ -80,7 +80,7 @@
 
 - id: maxime-fournes
   name: Maxime Fournes
-  role: Co-fondateur de Pause IA
+  role: Président de Pause IA
   image: ./images/maxime-fournes.jpg
 
 - id: marc-faddoul
@@ -162,3 +162,16 @@
     Je m'intéresse plus particulièrement à la couche la plus bas-niveau du 
     domaine, qui englobe des sujets aussi variés que les systèmes 
     d'exploitation, les réseau ou les systèmes distribués.
+
+- id: jeremy-perret
+  name: Jérémy Perret
+  role: Suboptimal IA | Docteur et ingénieur en Intelligence artificielle
+  image: ./images/jeremy-perret.jpg
+
+# - id: anne-sophie-simpere
+#   name: Anne-Sophie Simpere
+#   role: Coordonnatrice France de Stop Killer Robots
+
+# - id: henry-papadatos
+#   name: Henry Papadatos
+#   role: Directeur général de Safer AI
