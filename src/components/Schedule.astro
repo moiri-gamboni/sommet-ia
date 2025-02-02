@@ -52,9 +52,10 @@ const schedule = await getCollection('schedule')
                   {timeSlot.data.description}
                 </p>
                 {timeSlot.data.details && (
-                  <p class="mt-1 text-blue-900 text-lg tracking-tight italic">
-                    {timeSlot.data.details}
-                  </p>
+                  <p 
+                    class="mt-1 text-blue-900 text-lg tracking-tight italic" 
+                    set:html={timeSlot.data.details.replace(/\n/g, '<br>')}
+                  ></p>
                 )}
               </div>
             </li>

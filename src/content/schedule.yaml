@@ -26,7 +26,9 @@
 - id: keynotes
   type: Keynotes
   description: "Interventions sur les enjeux de gouvernance de l'IA"
-  details: "Maxime Fournes: \"IA en 2025 : état des lieux d’une accélération incontrôlée\""
+  details: >
+    Maxime Fournes: "IA en 2025 : état des lieux d'une accélération incontrôlée"
+    Lê Nguyên-Hoang: "Les IA ont hacké nos démocraties. Que faire ?"
   start: "11h45"
   end: "13h00"
   speakers:
