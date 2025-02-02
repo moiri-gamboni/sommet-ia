@@ -7,6 +7,7 @@
 - id: table-ronde-1
   type: "Table ronde n° 1"
   description: "De l'anticipation à la réalité : évaluer et prioriser les risques de l'IA"
+  details: "Alors que nous développons des systèmes d'IA toujours plus puissants, de nombreux risques autrefois théoriques sont devenus réalité. Comment orienter le développement de ces technologies pour éviter les écueils actuels tout en prévenant l'émergence de dangers potentiellement plus graves ?"
   start: "10h00"
   end: "11h15"
   speakers:
@@ -25,6 +26,7 @@
 - id: keynotes
   type: Keynotes
   description: "Interventions sur les enjeux de gouvernance de l'IA"
+  details: "Maxime Fournes: \"IA en 2025 : état des lieux d’une accélération incontrôlée\""
   start: "11h45"
   end: "13h00"
   speakers:
@@ -40,6 +42,7 @@
 - id: table-ronde-2
   type: "Table ronde n° 2"
   description: "Sécuriser l'avenir de l'IA, approches techniques et réglementaires"
+  details: "Face aux défis croissants de la sécurité de l'IA, cette table ronde explorera comment les solutions techniques et les mesures de gouvernance peuvent se compléter pour créer un cadre efficace de développement sûr de l'IA."
   start: "14h00"
   end: "15h30"
   speakers:

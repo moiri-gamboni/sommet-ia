@@ -8,6 +8,7 @@ const schedule = defineCollection({
     id: z.string(),
     type: z.string(),
     description: z.string(),
+    details: z.string().optional(),
     start: z.string(),
     end: z.string(),
     speakers: z.array(z.string()).optional(),

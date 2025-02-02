@@ -35,22 +35,27 @@ const schedule = await getCollection('schedule')
           {schedule.map((timeSlot) => (
             <li class="relative px-6 py-6 lg:px-10 lg:py-8">
               <div>
+                <p class="mt-1 font-mono text-base text-slate-500">
+                  <time>{timeSlot.data.start}</time>
+                  {' - '}
+                  <time>{timeSlot.data.end}</time>
+                </p>
                 <h3 class="text-xl font-semibold tracking-tight text-blue-900">
                   {timeSlot.data.type}
                 </h3>
                 {timeSlot.data.speakers && timeSlot.data.speakers.length > 0 && (
-                  <p class="mt-1 font-mono text-medium font-medium text-blue-600">
+                  <p class="mt-3 font-mono text-medium font-medium text-blue-600">
                     {timeSlot.data.speakers.join(', ')}
                   </p>
                 )}
                 <p class="mt-1 text-lg tracking-tight text-blue-900">
                   {timeSlot.data.description}
                 </p>
-                <p class="mt-1 font-mono text-base text-slate-500">
-                  <time>{timeSlot.data.start}</time>
-                  {' - '}
-                  <time>{timeSlot.data.end}</time>
-                </p>
+                {timeSlot.data.details && (
+                  <p class="mt-1 text-blue-900 text-lg tracking-tight italic">
+                    {timeSlot.data.details}
+                  </p>
+                )}
               </div>
             </li>
           ))}
