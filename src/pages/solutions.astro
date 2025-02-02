@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import BackgroundImage from '../components/BackgroundImage.astro';
+
+const title = "Solutions et Retours d'Expérience - IA: Reprendre le Contrôle";
+const description = "Découvrez les solutions concrètes et témoignages partagés par notre communauté pour reprendre le contrôle face à l'IA";
+---
+
+<Layout title={title} description={description}>
+	<div class="relative py-20 sm:pb-24 sm:pt-36">
+		<BackgroundImage class="-bottom-14 -top-36" />
+		<Container class="relative">
+			<div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+				<h1 class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 mb-12">
+					Résultats du Forum : <br>Solutions & propositions clés 
+				</h1>
+				
+				<div class="mt-6 space-y-6 text-lg tracking-tight text-blue-900">
+					<p class="text-center text-xl font-medium">
+						📢 Les contenus seront publiés ici après l'événement
+					</p>
+				</div>
+			</div>
+		</Container>
+	</div>
+</Layout> 
