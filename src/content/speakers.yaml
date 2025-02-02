@@ -168,10 +168,12 @@
   role: Suboptimal IA | Docteur et ingénieur en Intelligence artificielle
   image: ./images/jeremy-perret.jpg
 
+- id: henry-papadatos
+  name: Henry Papadatos
+  role: Directeur exécutif de Safer AI
+  image: ./images/henry-papadatos.jpg
+
 # - id: anne-sophie-simpere
 #   name: Anne-Sophie Simpere
 #   role: Coordonnatrice France de Stop Killer Robots
 
-# - id: henry-papadatos
-#   name: Henry Papadatos
-#   role: Directeur général de Safer AI
