@@ -46,7 +46,7 @@
   description: "Sécuriser l'avenir de l'IA, approches techniques et réglementaires"
   details: "Face aux défis croissants de la sécurité de l'IA, cette table ronde explorera comment les solutions techniques et les mesures de gouvernance peuvent se compléter pour créer un cadre efficace de développement sûr de l'IA."
   start: "14h00"
-  end: "15h30"
+  end: "15h15"
   speakers:
     - "Henri-Alexis Corvol"
     - "Flavien Chervet"
@@ -57,7 +57,7 @@
 - id: pause-2
   type: Pause café
   description: "Temps d'échange et de réseautage"
-  start: "15h30"
+  start: "15h15"
   end: "16h00"
 
 - id: presentations
