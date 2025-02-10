@@ -1,0 +1,26 @@
+---
+const { currentLang } = Astro.props;
+---
+
+<div class="flex justify-end gap-4 p-4">
+    <a 
+        href="/solutions" 
+        class={`px-4 py-2 font-semibold rounded transition-colors ${
+            currentLang === 'fr' 
+                ? 'text-white bg-blue-800 hover:bg-blue-700' 
+                : 'text-blue-800 border-2 border-blue-800 hover:bg-blue-100'
+        }`}
+    >
+        FR
+    </a>
+    <a 
+        href="/solutions_en" 
+        class={`px-4 py-2 font-semibold rounded transition-colors ${
+            currentLang === 'en' 
+                ? 'text-white bg-blue-800 hover:bg-blue-700' 
+                : 'text-blue-800 border-2 border-blue-800 hover:bg-blue-100'
+        }`}
+    >
+        EN
+    </a>
+</div> 

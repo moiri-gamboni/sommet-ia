@@ -2,23 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Container from '../components/Container.astro';
 import BackgroundImage from '../components/BackgroundImage.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 const title = "Solutions et Retours d'Expérience - IA: Reprendre le Contrôle";
 const description = "Découvrez les solutions concrètes et témoignages partagés par notre communauté pour reprendre le contrôle face à l'IA";
 ---
 
 <Layout title={title} description={description}>
-	<div class="relative py-20 sm:pb-24 sm:pt-36">
+	<div class="relative py-1 sm:py-[4.2rem]">
 		<BackgroundImage class="-bottom-14 -top-36" />
 		<Container class="relative">
-			<div class="absolute top-0 right-0 flex gap-4 p-4">
-				<a href="/solutions" class="px-4 py-2 font-semibold text-white bg-blue-800 rounded hover:bg-blue-700 transition-colors">
-					FR
-				</a>
-				<a href="/solutions_en" class="px-4 py-2 font-semibold text-blue-800 border-2 border-blue-800 rounded hover:bg-blue-100 transition-colors">
-					EN
-				</a>
-			</div>
+			<LanguageSwitcher currentLang="fr" />
 			<div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
 				<h1 class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 mb-12">
 					Résultats du Forum : <br>Solutions & propositions clés 

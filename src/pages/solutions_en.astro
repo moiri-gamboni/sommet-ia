@@ -2,25 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Container from '../components/Container.astro';
 import BackgroundImage from '../components/BackgroundImage.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 const title = "Solutions and Lessons Learned - AI: Taking Back Control";
 const description = "Discover concrete solutions and testimonials shared by our community to regain control over AI";
 ---
 
 <Layout title={title} description={description}>
-	<div class="relative py-20 sm:pb-24 sm:pt-36">
+	<div class="relative py-12 sm:pb-24 sm:pt-24">
 		<BackgroundImage class="-bottom-14 -top-36" />
 		<Container class="relative">
-			<!-- Language switcher -->
-			<div class="absolute top-0 right-0 flex gap-4 p-4">
-				<a href="/solutions" class="px-4 py-2 font-semibold text-blue-800 border-2 border-blue-800 rounded hover:bg-blue-100 transition-colors">
-					FR
-				</a>
-				<a href="/solutions_en" class="px-4 py-2 font-semibold text-white bg-blue-800 rounded hover:bg-blue-700 transition-colors">
-					EN
-				</a>
-			</div>
-			<!-- English content -->
+			<LanguageSwitcher currentLang="en" />
 			<div class="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
 				<h1 class="font-display text-4xl font-medium tracking-tight text-center text-blue-800 mb-12">
 					Forum Results: <br>Key Solutions & Proposals
